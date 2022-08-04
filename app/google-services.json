@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "225219957758",
+    "project_id": "arduino-projeler-ve-dersler",
+    "storage_bucket": "arduino-projeler-ve-dersler.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225219957758:android:5deb909090e158776966af",
+        "android_client_info": {
+          "package_name": "com.caneryildirim.arduinoprojelervedersler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225219957758-6bk08l78g0icvfbgc756roqn1ft7ocua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_u6JyKTrZyTWo2Yb_cMpwVfosDMsz3t0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225219957758-6bk08l78g0icvfbgc756roqn1ft7ocua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
