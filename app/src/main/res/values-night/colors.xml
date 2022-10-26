@@ -7,10 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="yesil">#00979C</color>
+    <color name="yesil">#050505</color>
     <color name="yesilüst">#00979C</color>
     <color name="night_bar">#212121</color>
-    <color name="row_white">#FFFFFF</color>
-    <color name="row_green">#aee3e2</color>
-    <color name="tab_text_color">#212121</color>
+    <color name="row_white">#212121</color>
+    <color name="row_green">#00979C</color>
+    <color name="tab_text_color">#FFFFFF</color>
 </resources>

@@ -1,5 +1,6 @@
 package com.caneryildirim.arduinoprojelervedersler.Adaptors
 
+import android.content.res.Resources
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +11,7 @@ import com.caneryildirim.arduinoprojelervedersler.databinding.RecyclerRowBinding
 
 
 class DersViewAdaptor(private var listener:Listener, private var imageDersList:ArrayList<Int>, private var dersNoList:ArrayList<String>, private var dersKonuList:ArrayList<String>):RecyclerView.Adapter<DersViewAdaptor.DersHolder>() {
-    private val colors= arrayListOf<String>("#FFFFFF","#aee3e2")
+    private val colorsNew= arrayListOf<Int>(R.color.row_green,R.color.row_white)
     interface Listener{
         fun onItemClick(position: Int)
     }
@@ -25,7 +26,7 @@ class DersViewAdaptor(private var listener:Listener, private var imageDersList:A
     }
 
     override fun onBindViewHolder(holder: DersHolder, position: Int) {
-        holder.itemView.setBackgroundColor(Color.parseColor(colors[position %2]))
+        holder.itemView.setBackgroundColor(holder.itemView.resources.getColor(colorsNew[position%2]))
         holder.binding.imageViewProje.setImageResource(imageDersList[position])
         holder.binding.textViewProjeNo.text=dersNoList[position]
         holder.binding.textViewKonuProje.text=dersKonuList[position]

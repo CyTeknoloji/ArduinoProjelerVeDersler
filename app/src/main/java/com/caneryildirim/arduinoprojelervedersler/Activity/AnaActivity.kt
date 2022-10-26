@@ -2,6 +2,8 @@ package com.caneryildirim.arduinoprojelervedersler.Activity
 
 
 import android.content.Intent
+import android.graphics.PorterDuff
+import android.graphics.drawable.Drawable
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

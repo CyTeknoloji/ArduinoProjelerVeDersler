@@ -23,13 +23,15 @@
                 android:id="@+id/toolbarEkstraDetay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?attr/colorPrimary"
+                android:background="@color/yesil"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:navigationIcon="@drawable/back" />
+                app:navigationIcon="@drawable/back"
+                app:subtitleTextColor="@color/white"
+                app:titleTextColor="@color/white" />
 
             <TextView
                 android:id="@+id/textEkstraBaslik"

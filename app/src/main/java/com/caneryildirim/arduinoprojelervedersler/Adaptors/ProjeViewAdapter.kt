@@ -10,7 +10,7 @@ import com.caneryildirim.arduinoprojelervedersler.databinding.RecyclerProjeBindi
 
 
 class ProjeViewAdapter(private var listener: ProjeViewAdapter.Listener, private var imageProjeList:ArrayList<Int>, private var projeNoList:ArrayList<String>, private var projeKonuList:ArrayList<String>): RecyclerView.Adapter<ProjeViewAdapter.ProjeHolder>() {
-    private val colors= arrayListOf<String>("#aee3e2","#FFFFFF")
+    private val colorsNew= arrayListOf<Int>(R.color.row_green,R.color.row_white)
 
     interface Listener{
         fun onItemClick(position: Int)
@@ -28,7 +28,7 @@ class ProjeViewAdapter(private var listener: ProjeViewAdapter.Listener, private 
     }
 
     override fun onBindViewHolder(holder: ProjeHolder, position: Int) {
-        holder.itemView.setBackgroundColor(Color.parseColor(colors[position %2]))
+        holder.itemView.setBackgroundColor(holder.itemView.resources.getColor(colorsNew[position%2]))
         holder.binding.imageViewProje.setImageResource(imageProjeList[position])
         holder.binding.textViewProjeNo.text=projeNoList[position]
         holder.binding.textViewKonuProje.text=projeKonuList[position]

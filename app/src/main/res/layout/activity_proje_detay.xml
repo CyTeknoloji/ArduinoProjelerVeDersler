@@ -24,13 +24,15 @@
                 android:id="@+id/toolbarProjeDetay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="?attr/colorPrimary"
+                android:background="@color/yesil"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:navigationIcon="@drawable/back" />
+                app:navigationIcon="@drawable/back"
+                app:subtitleTextColor="@color/white"
+                app:titleTextColor="@color/white" />
 
             <TextView
                 android:id="@+id/textView"
@@ -129,6 +131,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/yesilüst"
                 android:text="KODLARI İNDİR"
                 app:cornerRadius="15dp"
                 app:layout_constraintBottom_toBottomOf="parent"

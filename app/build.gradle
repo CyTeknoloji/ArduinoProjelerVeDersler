@@ -8,13 +8,13 @@ plugins {
 android {
 
 
-    compileSdkVersion 31
+    compileSdkVersion 32
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.caneryildirim.arduinoprojelervedersler"
         minSdkVersion 23
-        targetSdkVersion 31
+        targetSdkVersion 32
         versionCode 8
         versionName "2.0"
 
