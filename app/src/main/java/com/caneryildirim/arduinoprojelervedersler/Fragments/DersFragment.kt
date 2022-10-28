@@ -311,33 +311,19 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "  delay(500);\n" +
                 "}\n" +
                 "----------------------------------------")
-        dersDetayTextList3.add("#define satırı ile 8 nolu pine \n" +
-                "buton,10 nolu pine led adını veriyoruz.\n" +
+        dersDetayTextList3.add("#define satırı ile 8 nolu pine buton,10 nolu pine led adını veriyoruz.\n" +
                 "Bu durum kod yazarken rahatlık sağlar.\n" +
                 "\n" +
-                "Kod yazarken verileri kaydetmek\n" +
-                "için değişkenler kullanılır.\n" +
-                "Tam sayı olan verileri kaydetmek\n" +
-                "için int kodunu kullanırız.\n" +
-                "int butonDurum diyerek butonun\n" +
-                "burumunu bu değişkene kaydederiz.\n" +
+                "Kod yazarken verileri kaydetmek için değişkenler kullanılır.\n" +
+                "Tam sayı olan verileri kaydetmek için int kodunu kullanırız.\n" +
+                "int butonDurum diyerek butonun burumunu bu değişkene kaydederiz.\n" +
                 "Butona basılırsa butonDurum 1 olur,\n" +
                 "butona basılmazsa butonDurum 0 olur.\n" +
                 "\n" +
-                "pinMode komutu ile buton pinini\n" +
-                "giriş, led pinini çıkış olarak \n" +
-                "tanımladık.\n" +
-                "\n" +
-                "void loop kısmında digitalRead\n" +
-                "komutu ile butonun durumunu okuyup\n" +
-                "butonDurum a kaydediyoruz.\n" +
-                "\n" +
-                "if ve else ikilisi şart durumlarında\n" +
-                "kullanılır. butonDurum 1 olursa\n" +
-                "if içindeki komut çalışır.\n" +
-                "butonDurum un 1 olmadığı durumlarda\n" +
-                "else içindeki komut çalışır.\n" +
-                "\n" +
+                "pinMode komutu ile buton pinini giriş, led pinini çıkış olarak tanımladık.\n" +
+                "void loop kısmında digitalRead komutu ile butonun durumunu okuyup butonDurum a kaydediyoruz.\n" +
+                "if ve else ikilisi şart durumlarında kullanılır. butonDurum 1 olursa if içindeki komut çalışır.\n" +
+                "butonDurum un 1 olmadığı durumlarda else içindeki komut çalışır.\n" +
                 "Kodların Tamamı Aşağıdadır;\n" +
                 "---------------------------------------\n" +
                 "#define buton 8\n" +
@@ -359,23 +345,10 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "  }\n" +
                 "}\n" +
                 "----------------------------------------\n")
-        dersDetayTextList3.add("En yukarıda define komutu ile\n" +
-                "A0 pinine potPin ismini verdik\n" +
-                "ve int komutu ile deger adında\n" +
-                "değişkenimizi oluşturduk.\n" +
-                "\n" +
-                "setup kısmında pot tan gelen\n" +
-                "verileri Seri port ekranında\n" +
-                "görmek istediğimiz için Serial.begin\n" +
-                "komutunu kullandık ve istediğimiz\n" +
-                "bir yazı yazdırdık.\n" +
-                "\n" +
-                "loop kısmında ise potansiyometreden\n" +
-                "gelen değeri analogRead ile okuyarak\n" +
-                "deger'e kaydettik ve değeri\n" +
-                "Serial.println komutu ile\n" +
-                "seri port a göndermiş olduk.\n" +
-                "\n" +
+        dersDetayTextList3.add("En yukarıda define komutu ile A0 pinine potPin ismini verdik ve int komutu ile deger adında değişkenimizi oluşturduk.\n" +
+                "setup kısmında pot tan gelen verileri Seri port ekranında görmek istediğimiz için Serial.begin komutunu kullandık ve istediğimiz bir yazı yazdırdık.\n" +
+                "loop kısmında ise potansiyometreden gelen değeri analogRead ile okuyarak deger'e kaydettik ve değeri\n" +
+                "Serial.println komutu ile seri port a göndermiş olduk.\n" +
                 "Kodların Tamamı Aşağıdadır;\n" +
                 "-----------------------------------------\n" +
                 "#define potPin A0\n" +
@@ -393,27 +366,13 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "}\n" +
                 "-----------------------------------------\n" +
                 "\n")
-        dersDetayTextList3.add("setup kısmında genellikle dijital giriş\n" +
-                "ve çıkışlar tanımlanır.\n" +
-                "Bu devrede analog giriş ve analog çıkış\n" +
-                "kullandığımız için void setup kısmını\n" +
-                "boş bıraktık.\n" +
-                "\n" +
-                "define komutları ile led için 3,\n" +
-                "pot için A0 değerlerini tanımladık.\n" +
-                "\n" +
-                "void loop kısmında analogRead ile\n" +
-                "pot tan gelen değeri okuyarak int\n" +
-                "deger değişkenimize kaydettik.\n" +
-                "\n" +
-                "Arduino analog okumayı 0 ile 1023\n" +
-                "değerleri arasında yaparken,\n" +
-                "analog yazmayı 0 ile 255 arasında yapıyor.\n" +
+        dersDetayTextList3.add("setup kısmında genellikle dijital giriş ve çıkışlar tanımlanır.\n" +
+                "Bu devrede analog giriş ve analog çıkış kullandığımız için void setup kısmını boş bıraktık.\n" +
+                "define komutları ile led için 3,pot için A0 değerlerini tanımladık.\n" +
+                "void loop kısmında analogRead ile pot tan gelen değeri okuyarak int deger değişkenimize kaydettik.\n" +
+                "Arduino analog okumayı 0 ile 1023 değerleri arasında yaparken,analog yazmayı 0 ile 255 arasında yapıyor.\n" +
                 "Bu iki değeri map komutu ile eşitliyoruz.\n" +
-                "\n" +
-                "analogWrite komutu ile lede\n" +
-                "\"deger\" değişkenindeki veri kadar\n" +
-                "sinyal gönderiyoruz.\n" +
+                "analogWrite komutu ile lede\"deger\" değişkenindeki veri kadar sinyal gönderiyoruz.\n" +
                 "\n" +
                 "Kodların Tamamı Aşağıdadır;\n" +
                 "----------------------------------------\n" +
@@ -433,41 +392,28 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "\n")
         dersDetayTextList3.add("6 adet ledi tanımlarken dizi kullanacağız.\n" +
                 "Diziler değişkenlerden oluşan bir kümedir.\n" +
-                "int ledler adında bir dizi tanımladık ve\n" +
-                "her birisinin bağlanacağı pinlerin \n" +
-                "numaralarını küme içerisine yazdık.\n" +
-                "Yani 1. led 2 nolu pine, 2. led 3 nolu pine\n" +
-                ".... şeklinde bir tanımlama yaptık.\n" +
+                "int ledler adında bir dizi tanımladık ve her birisinin bağlanacağı pinlerin numaralarını küme içerisine yazdık.\n" +
+                "Yani 1. led 2 nolu pine, 2. led 3 nolu pine .... şeklinde bir tanımlama yaptık.\n" +
                 "\n" +
-                "Dizileri çağırırken ledler[ ] şeklinde\n" +
-                "çağırıyoruz.\n" +
-                "ledler[0] dersek, 0. küme elemanı olan\n" +
-                "\"2\" değerini getirir.\n" +
-                "ledler[5] yazarsak 5. küme elemanı olan\n" +
-                "\"7\" değerini getirecektir.\n" +
+                "Dizileri çağırırken ledler[ ] şeklinde çağırıyoruz.\n" +
+                "ledler[0] dersek, 0. küme elemanı olan \"2\" değerini getirir.\n" +
+                "ledler[5] yazarsak 5. küme elemanı olan \"7\" değerini getirecektir.\n" +
                 "\n" +
-                "void loop kısmında led pinlerini tanıtırken\n" +
-                "for döngüsünü kullanıyoruz.\n" +
+                "void loop kısmında led pinlerini tanıtırken for döngüsünü kullanıyoruz.\n" +
                 "\n" +
-                "for (değişken adı,koşulumuz,yapılacak iş)\n" +
-                "biçiminde parantez içini kodluyoruz.\n" +
+                "for (değişken adı,koşulumuz,yapılacak iş) biçiminde parantez içini kodluyoruz.\n" +
                 "i değişkenimizin adı\n" +
                 "\n" +
-                "i<6 şartımız yani i, 6 dan küçük olduğu\n" +
-                "sürece for içindeki kodlar çalışacak\n" +
+                "i<6 şartımız yani i, 6 dan küçük olduğu sürece for içindeki kodlar çalışacak\n" +
                 "\n" +
                 "i++ yapılacak işimiz. i++ demek\n" +
                 "i nin içindeki değeri bir arttırmak demek\n" +
                 "yani i içindeki değer 2 ise 3 olur.\n" +
                 "\n" +
-                "bu şekilde for döngüsü ile bütün ledlerin\n" +
-                "pinlerini tanımlamış oluruz.\n" +
+                "bu şekilde for döngüsü ile bütün ledlerin pinlerini tanımlamış oluruz.\n" +
                 "\n" +
-                "void loop içerisinde iki tane for döngümüz\n" +
-                "var. bunlardan ilki ledleri soldan sağa\n" +
-                "doğru yakıp söndürüyor.\n" +
-                "Aşağıdaki for döngüsü ise ledleri sağdan\n" +
-                "sola doğru yakıp söndürüyor.\n" +
+                "void loop içerisinde iki tane for döngümüz var. bunlardan ilki ledleri soldan sağa doğru yakıp söndürüyor.\n" +
+                "Aşağıdaki for döngüsü ise ledleri sağdan sola doğru yakıp söndürüyor.\n" +
                 "\n" +
                 "Kodların Tamamı Aşağıdadır;\n" +
                 "-----------------------------------------\n" +
@@ -498,25 +444,14 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "\n" +
                 "int ldrVeri adında değişken tanımlıyoruz.\n" +
                 "\n" +
-                "void setup kısmında led pinimizi çıkış pini\n" +
-                "olarak tanımlıyoruz. Serial.begin ile\n" +
-                "seri haberleşmeyi başlatıyoruz.\n" +
+                "void setup kısmında led pinimizi çıkış pini olarak tanımlıyoruz. Serial.begin ile seri haberleşmeyi başlatıyoruz.\n" +
                 "\n" +
-                "analogRead ile ldr nin sinyalini alarak\n" +
-                "ldrVeri değişkenine aktarıyoruz.\n" +
-                "Serial.println komutu ile ldrVeri\n" +
-                "içindeki değerleri seri port üzerinden \n" +
-                "göreceğiz.Seri haberleşmenin çok hızlı \n" +
-                "olmaması için delay ile 50ms lik bir \n" +
-                "gecikme yapıyoruz.\n" +
+                "analogRead ile ldr nin sinyalini alarak ldrVeri değişkenine aktarıyoruz.\n" +
+                "Serial.println komutu ile ldrVeri içindeki değerleri seri port üzerinden göreceğiz.Seri haberleşmenin çok hızlı olmaması için delay ile 50ms lik bir gecikme yapıyoruz.\n" +
                 "\n" +
-                "if komutu ile ldrVeri>900 ise\n" +
-                "ledimiz sönecek, değilse else komutu\n" +
-                "ile ledimiz yanacaktır.\n" +
+                "if komutu ile ldrVeri>900 ise ledimiz sönecek, değilse else komutu ile ledimiz yanacaktır.\n" +
                 "\n" +
-                "Kodumuzu yükledikten sonra Seri port ile\n" +
-                "ldrVeri değerlerine göre if içerisindeki\n" +
-                "koşul değerini arttırıp azaltabiliriz.\n" +
+                "Kodumuzu yükledikten sonra Seri port ile ldrVeri değerlerine göre if içerisindeki koşul değerini arttırıp azaltabiliriz.\n" +
                 "\n" +
                 "Kodların Tamamı Aşağıdadır;\n" +
                 "------------------------------------------\n" +
@@ -541,40 +476,24 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "------------------------------------------\n" +
                 "\n" +
                 "\n")
-        dersDetayTextList3.add("Pin tanımlamalarımızı yukarıda yaptıktan\n" +
-                "sonra void setup kısmında pinlerimizin\n" +
-                "çıkış pinleri olduğunu belirtiyoruz.\n" +
+        dersDetayTextList3.add("Pin tanımlamalarımızı yukarıda yaptıktan sonra void setup kısmında pinlerimizin çıkış pinleri olduğunu belirtiyoruz.\n" +
                 "\n" +
-                "loop kısmında ise pot tan okuduğumuz değeri\n" +
-                "potDeger değişkenine kaydediyoruz.\n" +
-                "if,ifelse ve else komutları ile koşullara\n" +
-                "göre ledimizin renklerini ayarlıyoruz.\n" +
+                "loop kısmında ise pot tan okuduğumuz değeri potDeger değişkenine kaydediyoruz.\n" +
+                "if,ifelse ve else komutları ile koşullara göre ledimizin renklerini ayarlıyoruz.\n" +
                 "\n" +
-                "potDeger den gelen değerler 0 ile 1023 \n" +
-                "arasında olduğu için her renk için 3 aralık\n" +
-                "oluşturmak gerekiyor.\n" +
+                "potDeger den gelen değerler 0 ile 1023 arasında olduğu için her renk için 3 aralık oluşturmak gerekiyor.\n" +
                 "0-341 aralığı,\n" +
                 "342-681 aralığı,\n" +
                 "682-1023 aralığı.\n" +
                 "\n" +
-                "if komutunda gelen değer 341 den küçükse\n" +
-                "if parantezi altındaki işlemler yapılır.\n" +
-                "Burada potDeger içindeki değeri 0 ile 255\n" +
-                "arasına getirmek için 4 e bölüp 3 ile \n" +
-                "çarpıyoruz.\n" +
+                "if komutunda gelen değer 341 den küçükse if parantezi altındaki işlemler yapılır.\n" +
+                "Burada potDeger içindeki değeri 0 ile 255 arasına getirmek için 4 e bölüp 3 ile çarpıyoruz.\n" +
                 "\n" +
-                "if koşulu sağlanmazsa ifelse kısmına \n" +
-                "bakılır.buradaki koşul sağlanırsa altındaki\n" +
-                "komutlar çalışır. yoksa else komutunun\n" +
-                "altındaki komutlar çalışacaktır.\n" +
+                "if koşulu sağlanmazsa ifelse kısmına bakılır.buradaki koşul sağlanırsa altındaki komutlar çalışır. yoksa else komutunun altındaki komutlar çalışacaktır.\n" +
                 "\n" +
-                "koşulların altındaki komutlar renkleri\n" +
-                "ayarlamak için hazırlanmış matematiksel\n" +
-                "işlemlerdir.\n" +
+                "koşulların altındaki komutlar renkleri ayarlamak için hazırlanmış matematiksel işlemlerdir.\n" +
                 "\n" +
-                "Son olarak ta analogWrite komutları ile\n" +
-                "RGB nin bacaklarına analog sinyaller \n" +
-                "yollanarak istenilen renk elde edilir.\n" +
+                "Son olarak ta analogWrite komutları ile RGB nin bacaklarına analog sinyaller yollanarak istenilen renk elde edilir.\n" +
                 "\n" +
                 "Kodların Tamamı Aşağıdadır;\n" +
                 "------------------------------------------\n" +
@@ -619,36 +538,21 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "  analogWrite(maviPin,255-maviDeger);\n" +
                 "}\n" +
                 "-------------------------------------------\n")
-        dersDetayTextList3.add("Kodumuzda matematiksel işlemler yapacağımız\n" +
-                "için matematik kütüphanesini kodumuza\n" +
-                "dahil ettik.\n" +
+        dersDetayTextList3.add("Kodumuzda matematiksel işlemler yapacağımız için matematik kütüphanesini kodumuza dahil ettik.\n" +
                 "\n" +
-                "setup kısmında Seri haberleşmeyi başlattık \n" +
-                "ve ledimize ait pini çıkış olarak\n" +
-                "tanımladık.\n" +
+                "setup kısmında Seri haberleşmeyi başlattık ve ledimize ait pini çıkış olarak tanımladık.\n" +
                 "\n" +
-                "loop kısmında ise NTC den gelen analog \n" +
-                "sinyali \"deger\" isimli değişkene \n" +
-                "kaydettik.\n" +
+                "loop kısmında ise NTC den gelen analog sinyali \"deger\" isimli değişkene kaydettik.\n" +
                 "\n" +
-                "deger değişkenini Termistor fonksiyonunda\n" +
-                "matematiksel işlemden geçirip sıcaklığa\n" +
-                "dönüştürüyoruz.\n" +
+                "deger değişkenini Termistor fonksiyonunda matematiksel işlemden geçirip sıcaklığa dönüştürüyoruz.\n" +
                 "\n" +
-                "Az önce bahsettiğimiz matematiksel işlemler\n" +
-                "Termistor fonksiyonu içinde gerçekleşiyor.\n" +
+                "Az önce bahsettiğimiz matematiksel işlemler Termistor fonksiyonu içinde gerçekleşiyor.\n" +
                 "\n" +
-                "if else yapısı ile sıcaklık değeri\n" +
-                "30 derece üzerindeyse led yanacak,\n" +
-                "değilse sönecektir.\n" +
+                "if else yapısı ile sıcaklık değeri 30 derece üzerindeyse led yanacak,değilse sönecektir.\n" +
                 "\n" +
-                "Seri haberleşmeyi yavaşlatmak için \n" +
-                "kodumuzun sonunda delay komutu ile 250ms \n" +
-                "gecikme yaratıyoruz.\n" +
+                "Seri haberleşmeyi yavaşlatmak için kodumuzun sonunda delay komutu ile 250ms gecikme yaratıyoruz.\n" +
                 "\n" +
-                "Kodumuzu Arduino muza yükledikten sonra\n" +
-                "Seri port ekranını açarak sıcaklık\n" +
-                "değerlerimizi görebiliriz.\n" +
+                "Kodumuzu Arduino muza yükledikten sonra Seri port ekranını açarak sıcaklık değerlerimizi görebiliriz.\n" +
                 "\n" +
                 "Kodların Tamamı Aşağıdadır;\n" +
                 "-------------------------------------------\n" +
@@ -680,32 +584,21 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "  }\n" +
                 "}\n" +
                 "-------------------------------------------\n")
-        dersDetayTextList3.add("Bu kodda işlerimizin büyük kısımı\n" +
-                "fonksiyon oluşturarak halletmiş olduk.\n" +
+        dersDetayTextList3.add("Bu kodda işlerimizin büyük kısımı fonksiyon oluşturarak halletmiş olduk.\n" +
                 "\n" +
-                "HC-SR04 sensörü ile ölçüm yapacağımız\n" +
-                "mesafe fonksiyonu oluşturduk.\n" +
+                "HC-SR04 sensörü ile ölçüm yapacağımız mesafe fonksiyonu oluşturduk.\n" +
                 "\n" +
-                "Gelen ölçüm değerine göre buzzer ın\n" +
-                "aralıklı çalma hızını ayarlayan melodi\n" +
-                "fonksiyonu oluşturduk.\n" +
+                "Gelen ölçüm değerine göre buzzer ın aralıklı çalma hızını ayarlayan melodi fonksiyonu oluşturduk.\n" +
                 "\n" +
-                "Bu iki fonksiyonu da void loop içinde\n" +
-                "birer kere kullanarak kodumuzu tamamladık.\n" +
+                "Bu iki fonksiyonu da void loop içinde birer kere kullanarak kodumuzu tamamladık.\n" +
                 "\n" +
-                "long değişkeni int değişkenine göre daha\n" +
-                "yüksek tamsayı aralığı alabildiği için \n" +
-                "long ile duration ve distance değişkenleri\n" +
-                "oluşturuldu.\n" +
+                "long değişkeni int değişkenine göre daha yüksek tamsayı aralığı alabildiği için long ile duration ve distance değişkenleri oluşturuldu.\n" +
                 "\n" +
-                "delayMicroseconds komutu ile mikrosaniye\n" +
-                "cinsinden gecikme oluşturduk.\n" +
+                "delayMicroseconds komutu ile mikrosaniye cinsinden gecikme oluşturduk.\n" +
                 "\n" +
-                "pulseIn komutu ile echoPin in kaç saniye\n" +
-                "sonra tetiklendiğini buluyoruz.\n" +
+                "pulseIn komutu ile echoPin in kaç saniye sonra tetiklendiğini buluyoruz.\n" +
                 "\n" +
-                "distance=duration/58.2 komutu ile\n" +
-                "bulduğumuz süreyi mesafeye çeviriyoruz.\n" +
+                "distance=duration/58.2 komutu ile bulduğumuz süreyi mesafeye çeviriyoruz.\n" +
                 "\n" +
                 "Kodların Bütün Hali Aşağıdaki Gibidir;\n" +
                 "---------------------------------------\n" +
@@ -754,32 +647,19 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-------------------------------------\n" +
                 "\n" +
                 "\n")
-        dersDetayTextList3.add("Motorumuzun çalışmasını  IN3 ve IN4 \n" +
-                "pinlerine gerilim vererek kontrol ederiz.\n" +
-                "bu sebeple motorPin1 ve motorPin2 olarak\n" +
-                "bu girişleri tanımladık.\n" +
+        dersDetayTextList3.add("Motorumuzun çalışmasını  IN3 ve IN4 pinlerine gerilim vererek kontrol ederiz.bu sebeple motorPin1 ve motorPin2 olarak bu girişleri tanımladık.\n" +
                 "\n" +
-                "Ses sensöründen gelen bilgiyi almak\n" +
-                "için sensorDurum isimli bir değişken\n" +
-                "tanımladık. \n" +
+                "Ses sensöründen gelen bilgiyi almak için sensorDurum isimli bir değişken tanımladık. \n" +
                 "\n" +
-                "Setup kısmında bu pinlerimizi tanıtmış \n" +
-                "olduk\n" +
+                "Setup kısmında bu pinlerimizi tanıtmış olduk\n" +
                 "\n" +
-                "Loop kısmında sensör bilgimizi kaydettikten\n" +
-                "sonra if ve else komutları ile koşul \n" +
-                "durumu oluşturuyoruz.\n" +
+                "Loop kısmında sensör bilgimizi kaydettikten sonra if ve else komutları ile koşul durumu oluşturuyoruz.\n" +
                 "\n" +
-                "sensorDurum HIGH olarak okunduğu zaman\n" +
-                "if içerisindeki komutlar çalışacaktır.\n" +
-                "Motorun çalışması için herhangi bir pinine\n" +
-                "5v verip diğer pinine 0v vermek yeterli\n" +
-                "olacaktır.\n" +
+                "sensorDurum HIGH olarak okunduğu zaman if içerisindeki komutlar çalışacaktır.\n" +
+                "Motorun çalışması için herhangi bir pinine 5v verip diğer pinine 0v vermek yeterli olacaktır.\n" +
                 "\n" +
-                "sensorDurum LOW olarak okunduğu zaman\n" +
-                "else içerisindeki komutlar çalışacaktır.\n" +
-                "Motorun durması için her iki pine de\n" +
-                "0v vermek yeterli olacaktır.\n" +
+                "sensorDurum LOW olarak okunduğu zaman else içerisindeki komutlar çalışacaktır.\n" +
+                "Motorun durması için her iki pine de 0v vermek yeterli olacaktır.\n" +
                 "\n" +
                 "Kodların Tamamı Aşağıdadır;\n" +
                 "-----------------------------------------\n" +
@@ -808,20 +688,15 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "------------------------------------------\n" +
                 "\n" +
                 "\n")
-        dersDetayTextList3.add("Servo motorumuz 0 ile 180 derece arasında\n" +
-                "açısal hareket edebilmektedir.\n" +
+        dersDetayTextList3.add("Servo motorumuz 0 ile 180 derece arasında açısal hareket edebilmektedir.\n" +
                 "\n" +
-                "Joystick modülünden arduino nun A0 pinine\n" +
-                "giden veri ise 0 ile 1023 arasındadır.\n" +
+                "Joystick modülünden arduino nun A0 pinine giden veri ise 0 ile 1023 arasındadır.\n" +
                 "\n" +
-                "map komutu ile joystick ten gelen bu değeri\n" +
-                "servoya uygun dereceye dönüştürdük.\n" +
+                "map komutu ile joystick ten gelen bu değeri servoya uygun dereceye dönüştürdük.\n" +
                 "\n" +
-                "Projemizde servo kullanacağımız zaman\n" +
-                "her motora Servo komutu ile isim veriyoruz\n" +
+                "Projemizde servo kullanacağımız zaman her motora Servo komutu ile isim veriyoruz\n" +
                 "\n" +
-                "Eğer 2 motorumuz olsaydı bunları motor1 ve\n" +
-                "motor2 olarak belirleyebilirdik.\n" +
+                "Eğer 2 motorumuz olsaydı bunları motor1 ve motor2 olarak belirleyebilirdik.\n" +
                 "\n" +
                 "Kodların Tamamı Aşağıdadır;\n" +
                 "------------------------------------------\n" +
@@ -841,27 +716,15 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "  motor.write(derece);\n" +
                 "}\n" +
                 "-------------------------------------------\n")
-        dersDetayTextList3.add("define kodları ile biz sadece \n" +
-                "kullanacağımız butonları tanımladık.\n" +
-                "Bütün butonlar için gerekli kodlara\n" +
-                "internetten ulaşılabilmektedir.\n" +
+        dersDetayTextList3.add("define kodları ile biz sadece kullanacağımız butonları tanımladık.\n" +
+                "Bütün butonlar için gerekli kodlara internetten ulaşılabilmektedir.\n" +
                 "\n" +
-                "IR ile ilgili bütün yazdığımız kodları\n" +
-                "IRremote.h kütüphanesini eklediğimiz \n" +
-                "için kullanabiliyoruz.\n" +
+                "IR ile ilgili bütün yazdığımız kodları IRremote.h kütüphanesini eklediğimiz için kullanabiliyoruz.\n" +
                 "\n" +
-                "Kullandığımız RGB ortak anotlu olduğu için\n" +
-                "ledi söndürmek için diğer uçlara 5v vermek\n" +
-                "gerekiyor. Bu yüzden Buton0 için yazdığımız\n" +
-                "else if komutunun altında bütün RGB \n" +
-                "pinlerini HIGH yaptık.\n" +
+                "Kullandığımız RGB ortak anotlu olduğu için ledi söndürmek için diğer uçlara 5v vermek gerekiyor. Bu yüzden Buton0 için yazdığımız else if komutunun altında bütün RGB pinlerini HIGH yaptık.\n" +
                 "\n" +
-                "Aynı mantıkla ledin tüm renklerini açarak\n" +
-                "beyaz yanması için ortak anot dışındaki\n" +
-                "bacaklarımıza 0V vermemiz gerekiyor.\n" +
-                "Bu yüzden Buton4 için yazılan else if\n" +
-                "komutunun altında bütüm RGB pinlerini\n" +
-                "LOW yaptık.\n" +
+                "Aynı mantıkla ledin tüm renklerini açarak beyaz yanması için ortak anot dışındaki bacaklarımıza 0V vermemiz gerekiyor.\n" +
+                "Bu yüzden Buton4 için yazılan else if komutunun altında bütüm RGB pinlerini LOW yaptık.\n" +
                 "\n" +
                 "Kodların Tamamı Aşağıdadır;\n" +
                 "------------------------------------------\n" +
@@ -916,25 +779,15 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "  }\n" +
                 "}\n" +
                 "-------------------------------------------\n")
-        dersDetayTextList3.add("loop kısmında önce trig pini LOW yapılarak\n" +
-                "sensör ölçüme hazırlanır.\n" +
-                "Sonra trig pini önce HIGH sonra LOW \n" +
-                "yapılarak bir ses dalgası gönderilir.\n" +
+        dersDetayTextList3.add("loop kısmında önce trig pini LOW yapılarak sensör ölçüme hazırlanır.\n" +
+                "Sonra trig pini önce HIGH sonra LOW yapılarak bir ses dalgası gönderilir.\n" +
                 "\n" +
-                "pulseIn komutu ile ses dalgasının süresi\n" +
-                "ölçülür. Bu süre 0,0345 ile çarpılıp\n" +
-                "2 ye bölünerek mesafe bulunur.\n" +
+                "pulseIn komutu ile ses dalgasının süresi ölçülür. Bu süre 0,0345 ile çarpılıp 2 ye bölünerek mesafe bulunur.\n" +
                 "\n" +
-                "lcd mize yazı yazdırmak için lcd.print\n" +
-                "komutunu kullanıyoruz. Eğer parantez\n" +
-                "içinde kendi istediğimiz bir yazı vs.\n" +
-                "yazdırmak istersek, yazdıracağımız şeyi\n" +
-                "tırnak içine alıp öyle yazarız.\n" +
+                "lcd mize yazı yazdırmak için lcd.print komutunu kullanıyoruz. Eğer parantez içinde kendi istediğimiz bir yazı vs.yazdırmak istersek, yazdıracağımız şeyi tırnak içine alıp öyle yazarız.\n" +
                 "Örnek lcd.print(\"DENEME\");\n" +
                 "\n" +
-                "Eğer bir değişken yazdıracaksak parantez\n" +
-                "içine değişken adımızı yazmamız yeterli\n" +
-                "olur.\n" +
+                "Eğer bir değişken yazdıracaksak parantez içine değişken adımızı yazmamız yeterli olur.\n" +
                 "Örnek lcd.print(uzaklik);\n" +
                 "\n" +
                 "Kodların Tamamı Aşağıdadır;\n" +
@@ -972,17 +825,13 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "  lcd.print(\"cm\");\n" +
                 "}\n" +
                 "------------------------------------------\n")
-        dersDetayTextList3.add("loop kısmında PIR sensöründen gelen\n" +
-                "bilgileri hareket değişkenine kaydederiz.\n" +
+        dersDetayTextList3.add("loop kısmında PIR sensöründen gelen bilgileri hareket değişkenine kaydederiz.\n" +
                 "\n" +
-                "Hareketin HIGH olması durumunda if altında\n" +
-                "bulunan komutlar çalışır.\n" +
+                "Hareketin HIGH olması durumunda if altında bulunan komutlar çalışır.\n" +
                 "Burada servo önce 150 derece hareket eder.\n" +
-                "250ms bekler ve sonra 30 derece hareket\n" +
-                "ederek 250 ms bekler. \n" +
+                "250ms bekler ve sonra 30 derece hareket ederek 250 ms bekler. \n" +
                 "\n" +
-                "Eğer hareket yoksa motor 90 derece açı ile\n" +
-                "duracaktır.\n" +
+                "Eğer hareket yoksa motor 90 derece açı ile duracaktır.\n" +
                 "\n" +
                 "Kodların Tamamı aşağıdadır;\n" +
                 "------------------------------------------\n" +
@@ -1013,11 +862,8 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "  \n" +
                 "}\n" +
                 "------------------------------------------")
-        dersDetayTextList3.add("Bluetooth modülü de tıpkı bilgisayar gibi\n" +
-                "Arduino seri haberleşmesini kullanır.\n" +
-                "Bu sebeple Bluetoot modülü kullanırken \n" +
-                "setup kısmına Serial.begin(9600) komutunu\n" +
-                "yazıyoruz.\n" +
+        dersDetayTextList3.add("Bluetooth modülü de tıpkı bilgisayar gibi Arduino seri haberleşmesini kullanır.\n" +
+                "Bu sebeple Bluetoot modülü kullanırken setup kısmına Serial.begin(9600) komutunu yazıyoruz.\n" +
                 "\n" +
                 "Kodlarımızın tamamı aşağıdaki gibidir;\n" +
                 "-----------------------------------------\n" +
@@ -1059,11 +905,8 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "  }\n" +
                 "}\n" +
                 "------------------------------------------\n")
-        dersDetayTextList3.add("Toprak nem sensörü potansiyometre ile\n" +
-                "ayarladığımız değerin altında nem ölçtüğü\n" +
-                "zaman DO pini 5v çıkış verecektir. \n" +
-                "Nem değeri bu değerin üstünde ise DO pini\n" +
-                "0v çıkış verecektir.\n" +
+        dersDetayTextList3.add("Toprak nem sensörü potansiyometre ile ayarladığımız değerin altında nem ölçtüğü zaman DO pini 5v çıkış verecektir. \n" +
+                "Nem değeri bu değerin üstünde ise DO pini 0v çıkış verecektir.\n" +
                 "Kodların tamamı aşağıdadır;\n" +
                 "------------------------------------------\n" +
                 "#define sensorPin 9\n" +
@@ -1088,13 +931,9 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "  }\n" +
                 "}\n" +
                 "------------------------------------------")
-        dersDetayTextList3.add("Yağmur sensörü Arduino analog pinine\n" +
-                "bağlı olduğu için 0-1023 değerleri \n" +
-                "arasında veri gönderecektir. bu değerler\n" +
-                "yağmur şiddetine göre artar ya da azalır.\n" +
+        dersDetayTextList3.add("Yağmur sensörü Arduino analog pinine bağlı olduğu için 0-1023 değerleri arasında veri gönderecektir. bu değerler yağmur şiddetine göre artar ya da azalır.\n" +
                 "\n" +
-                "Kodumuzda sınır değerimizi 100 olarak \n" +
-                "belirledik ve if içinde bunu belirttik.\n" +
+                "Kodumuzda sınır değerimizi 100 olarak belirledik ve if içinde bunu belirttik.\n" +
                 "Sınır yetersiz gelirle değiştirilebilir.\n" +
                 "\n" +
                 "Kodların tamamı aşağıdadır;\n" +
@@ -1121,15 +960,10 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "  }\n" +
                 "}\n" +
                 "------------------------------------------")
-        dersDetayTextList3.add("Gaz sensörü Arduino analog girişine \n" +
-                "bağlı olduğı için 0-1023 arasında değer \n" +
-                "gönderecektir. Gazın seviyesine göre\n" +
-                "bu değer değişir.\n" +
+        dersDetayTextList3.add("Gaz sensörü Arduino analog girişine bağlı olduğı için 0-1023 arasında değer gönderecektir. Gazın seviyesine göre bu değer değişir.\n" +
                 "\n" +
-                "sensorDurum içindeki verinin 400 den \n" +
-                "büyük olması halinde buzzer ötecektir.\n" +
-                "400 değerini if içinde yazdık. eğer \n" +
-                "bu değeri istersek değiştirebiliriz.\n" +
+                "sensorDurum içindeki verinin 400 den büyük olması halinde buzzer ötecektir.\n" +
+                "400 değerini if içinde yazdık. eğer bu değeri istersek değiştirebiliriz.\n" +
                 "\n" +
                 "Kodların Tamamı Aşağıdadır;\n" +
                 "------------------------------------------\n" +
@@ -1155,9 +989,7 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "}\n" +
                 "------------------------------------------\n")
 
-        dersDetayTextList1.add("Arduino yazılımının bilgisayara indirilmesi \n" +
-                "için aşağıdaki işlemlerin yapılması\n" +
-                "gerekmektedir.")
+        dersDetayTextList1.add("Arduino yazılımının bilgisayara indirilmesi için aşağıdaki işlemlerin yapılması gerekmektedir.")
         dersDetayTextList1.add("-Arduino Uno\n" +
                 "-Breadboard\n" +
                 "-Led\n" +
@@ -1173,8 +1005,7 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-10k ohm direnç\n" +
                 "-jumper kablo\n" +
                 "\n" +
-                "Bu uygulama ile butona basıldığı zaman\n" +
-                "ledin yanık, basılmadığı zaman ise\n" +
+                "Bu uygulama ile butona basıldığı zaman ledin yanık, basılmadığı zaman ise\n" +
                 "sönük kalması sağlanacaktır.\n" +
                 "\n" +
                 "Butonlar giriş olarak bağlanır(INPUT)\n" +
@@ -1184,11 +1015,8 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-10k ohm potansiyometre\n" +
                 "-jumper kablo\n" +
                 "\n" +
-                "Arduino kart üzerinde Analog Input pinleri\n" +
-                "vardır. bu pinler ile 5V ve 0V arasında\n" +
-                "yer alan analog sinyaller ölçülebilir.\n" +
-                "Bu devrede potansiyometre ile analog sinyal\n" +
-                "oluşturup arduino ile okuyacağız.")
+                "Arduino kart üzerinde Analog Input pinleri vardır. bu pinler ile 5V ve 0V arasında yer alan analog sinyaller ölçülebilir.\n" +
+                "Bu devrede potansiyometre ile analog sinyal oluşturup arduino ile okuyacağız.")
         dersDetayTextList1.add("-Arduino Uno\n" +
                 "-Breadboard-\n" +
                 "-10k potansiyometre\n" +
@@ -1196,23 +1024,18 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-330 ohm direnç\n" +
                 "-jumper kablo\n" +
                 "\n" +
-                "Bu uygulamada potansiyometreden okuduğumuz değer\n" +
-                "ile orantılı bir şekilde ledimizin parlaklığını\n" +
-                "ayarlayacağız.\n" +
+                "Bu uygulamada potansiyometreden okuduğumuz değer ile orantılı bir şekilde ledimizin parlaklığını ayarlayacağız.\n" +
                 "\n" +
-                "Led in parlaklığını analog çıkış ile\n" +
-                "ayarlayacağız.")
+                "Led in parlaklığını analog çıkış ile ayarlayacağız.")
         dersDetayTextList1.add("-Arduino Uno\n" +
                 "-Breadboard\n" +
                 "-6 adet led\n" +
                 "-6 adet 330 ohm direnç\n" +
                 "-jumper kablo\n" +
                 "\n" +
-                "Bu uygulamada for döngüsünün nasıl\n" +
-                "kullanıldığını göreceğiz.\n" +
+                "Bu uygulamada for döngüsünün nasıl kullanıldığını göreceğiz.\n" +
                 "\n" +
-                "6 adet ledin her birisi sırası ile\n" +
-                "yanıp sönecekler.")
+                "6 adet ledin her birisi sırası ile yanıp sönecekler.")
         dersDetayTextList1.add("-Arduino Uno\n" +
                 "-Breadboard\n" +
                 "-330 ohm direnç\n" +
@@ -1221,13 +1044,9 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-ldr\n" +
                 "-jumper kablo\n" +
                 "\n" +
-                "Bu uygulamada LDR den gelen analog veriye\n" +
-                "göre ledimizi yakıp söndüreceğiz.\n" +
+                "Bu uygulamada LDR den gelen analog veriye göre ledimizi yakıp söndüreceğiz.\n" +
                 "\n" +
-                "LDR ışığa duyarlı dirençtir.Ortam ışığına\n" +
-                "göre direnç değeri değişir. Biz karanlık\n" +
-                "ortamde ledin yanmasını, aydınlık ortamda\n" +
-                "ise sönmesini istiyoruz.")
+                "LDR ışığa duyarlı dirençtir.Ortam ışığına göre direnç değeri değişir. Biz karanlık ortamde ledin yanmasını, aydınlık ortamda ise sönmesini istiyoruz.")
         dersDetayTextList1.add("-Arduino Uno\n" +
                 "-Breadboard\n" +
                 "-3 adet 330 ohm direnç\n" +
@@ -1235,16 +1054,12 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-10k potansiyometre\n" +
                 "-jumper kablo\n" +
                 "\n" +
-                "RGB ledler sayesinde istediğimiz bütün\n" +
-                "renkleri elde edebiliyoruz.\n" +
+                "RGB ledler sayesinde istediğimiz bütün renkleri elde edebiliyoruz.\n" +
                 "RGB(kırmızı,yeşil,mavi) kısaltmasıdır.\n" +
-                "RGB ledlerin bacak bağlantıları farklı \n" +
-                "olabilmekte.\n" +
+                "RGB ledlerin bacak bağlantıları farklı olabilmekte.\n" +
                 "\n" +
                 "Bu devrede ortak anotlu RGB kullanıyoruz.\n" +
-                "RGB ile proje yaparken bacaklarını\n" +
-                "arduino nun PWM özellikli pinlerine \n" +
-                "bağlamamız gerekiyor(3,5,6,9,10,11)")
+                "RGB ile proje yaparken bacaklarını arduino nun PWM özellikli pinlerine bağlamamız gerekiyor(3,5,6,9,10,11)")
         dersDetayTextList1.add("-Arduino Uno\n" +
                 "-Breadboard\n" +
                 "-NTC Sıcaklık Sensörü\n" +
@@ -1253,16 +1068,10 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-10K ohm direnç\n" +
                 "-Jumper kablo\n" +
                 "\n" +
-                "NTC ısıya duyarlı dirençtir.Ortam ısısı\n" +
-                "arttıkça iç direnci düşer.\n" +
-                "Bu devrede NTC den gelen analog sinyali\n" +
-                "alarak matematiksel işlemlerden geçirip\n" +
-                "ortam sıcaklığını bulacağız.\n" +
+                "NTC ısıya duyarlı dirençtir.Ortam ısısı arttıkça iç direnci düşer.\n" +
+                "Bu devrede NTC den gelen analog sinyali alarak matematiksel işlemlerden geçirip ortam sıcaklığını bulacağız.\n" +
                 "\n" +
-                "Burada matematiksel işlemlerin içeriğini\n" +
-                "bilmek önemli değil. Önemli olan NTC den \n" +
-                "gelen sinyali sıcaklığa dönüştürüp\n" +
-                "kullamnabilmektir.")
+                "Burada matematiksel işlemlerin içeriğini bilmek önemli değil. Önemli olan NTC den gelen sinyali sıcaklığa dönüştürüp kullamnabilmektir.")
         dersDetayTextList1.add("-Arduino Uno\n" +
                 "-Breadboard\n" +
                 "-Buzzer\n" +
@@ -1270,10 +1079,7 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-HC-SR04 Ultrasonik Mesafe Sensörü\n" +
                 "-Jumper Kablo\n" +
                 "\n" +
-                "HC-SR04 mesafe sensörü, önce ultrasonik \n" +
-                "bir dalga gönderir, sonra da bu dalganın\n" +
-                "yansımasını dinler. Arada geçen süreyi de\n" +
-                "formüle ederek mesafeyi bulmamızı sağlar.\n" +
+                "HC-SR04 mesafe sensörü, önce ultrasonik bir dalga gönderir, sonra da bu dalganın yansımasını dinler. Arada geçen süreyi de formüle ederek mesafeyi bulmamızı sağlar.\n" +
                 "\n" +
                 "Devremiz aşağıdaki gibidir.")
         dersDetayTextList1.add("-Arduino Uno\n" +
@@ -1284,33 +1090,21 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-Ses sensör kartı\n" +
                 "-Jumper kablo\n" +
                 "\n" +
-                "Bu uygulamada ses sensöründen okunan\n" +
-                "değere göre motorun hareketi\n" +
-                "sağlanacaktır.\n" +
+                "Bu uygulamada ses sensöründen okunan değere göre motorun hareketi sağlanacaktır.\n" +
                 "\n" +
-                "Ses sensör kartları ses seviyesi ayarlanan\n" +
-                "seviyenin üzerine ulaşınca 5v çıkış veren\n" +
-                "bir karttır. Ses seviyesinin sınırını \n" +
-                "belirlemek için üzerinde trimpot bulunur.\n" +
+                "Ses sensör kartları ses seviyesi ayarlanan seviyenin üzerine ulaşınca 5v çıkış veren bir karttır. Ses seviyesinin sınırını belirlemek için üzerinde trimpot bulunur.\n" +
                 "\n" +
                 "DC motorlar çalışırken yüksek akım çekerler\n" +
-                "Bu sebeple Arduino pinlerine direk \n" +
-                "bağlanamazlar. Arduino ile motor arasında\n" +
-                "motor sürücüler kullanılır.L298N süücüsünü\n" +
-                "bu sebeple kullanacağız.")
+                "Bu sebeple Arduino pinlerine direk bağlanamazlar. Arduino ile motor arasında motor sürücüler kullanılır.L298N süücüsünü bu sebeple kullanacağız.")
         dersDetayTextList1.add("-Arduino Uno\n" +
                 "-Breadboard\n" +
                 "-Servo motor\n" +
                 "-Joystick\n" +
                 "-Jumper kablo\n" +
                 "\n" +
-                "Joystick, üzerindeki kolu sağa sola ya da \n" +
-                "yukarı aşağı hareket ettirerek analog\n" +
-                "sinyal almamızı sağlar.\n" +
+                "Joystick, üzerindeki kolu sağa sola ya da yukarı aşağı hareket ettirerek analog sinyal almamızı sağlar.\n" +
                 "\n" +
-                "Servo motorlar, data pininden aldığı\n" +
-                "sinyale göre açısal olarak hareket eden\n" +
-                "motorlardır.")
+                "Servo motorlar, data pininden aldığı sinyale göre açısal olarak hareket eden motorlardır.")
         dersDetayTextList1.add("-Arduino Uno\n" +
                 "-Breadboard\n" +
                 "-RGB led\n" +
@@ -1318,9 +1112,7 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-3 adet 330 ohm direnç\n" +
                 "-Jumper kablo\n" +
                 "\n" +
-                "Bu uygulamada IR kumandasından gelen \n" +
-                "kızılötesi sinyallere göre RGB ledin\n" +
-                "istenilen renkte yanması sağlanacaktır.\n" +
+                "Bu uygulamada IR kumandasından gelen kızılötesi sinyallere göre RGB ledin istenilen renkte yanması sağlanacaktır.\n" +
                 "1'e basınca kırmızı\n" +
                 "2'ye yasınca yeşil\n" +
                 "3'e basınca mavi\n" +
@@ -1333,15 +1125,11 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-10K potansiyometre\n" +
                 "-Jumper kablo\n" +
                 "\n" +
-                "Ultrasonik sensör ile mesafemizi ölçerek\n" +
-                "LCD ekran üzerinde bu mesafeyi \n" +
-                "yazdıracağız.\n" +
+                "Ultrasonik sensör ile mesafemizi ölçerek LCD ekran üzerinde bu mesafeyi yazdıracağız.\n" +
                 "\n" +
-                "LCD mizde 2 satır ve her satırda 16\n" +
-                "karakter vardır.\n" +
+                "LCD mizde 2 satır ve her satırda 16 karakter vardır.\n" +
                 "\n" +
-                "Potansiyometre ile LCD nin kontras ayarını\n" +
-                "yapacağız.\n" +
+                "Potansiyometre ile LCD nin kontras ayarını yapacağız.\n" +
                 "\n" +
                 "Devremiz aşağıdaki gibidir;")
         dersDetayTextList1.add("-Arduino Uno\n" +
@@ -1350,16 +1138,11 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-PIR sensörü\n" +
                 "-Jumper kablo\n" +
                 "\n" +
-                "PIR sensörü ortamdaki kızılötesi\n" +
-                "hareketleri algılayarak sinyal gönderen\n" +
-                "bir sensördür.\n" +
+                "PIR sensörü ortamdaki kızılötesi hareketleri algılayarak sinyal gönderen bir sensördür.\n" +
                 "\n" +
-                "Servo motor verilen açısal değere göre\n" +
-                "hareket eden motorlardır.\n" +
+                "Servo motor verilen açısal değere göre hareket eden motorlardır.\n" +
                 "\n" +
-                "Bu uygulamada PIR sensörü hareket \n" +
-                "alğıladığı zaman servo motorun çalışması\n" +
-                "sağlanacaktır.")
+                "Bu uygulamada PIR sensörü hareket alğıladığı zaman servo motorun çalışması sağlanacaktır.")
         dersDetayTextList1.add("-Arduino Uno\n" +
                 "-Breadboard\n" +
                 "-HC06 Bluetooth Modülü\n" +
@@ -1367,9 +1150,7 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-3 adet 330 ohm direnç\n" +
                 "-Jumper kablo\n" +
                 "\n" +
-                "Bu uygulamada telefon üzerinden bluetooth\n" +
-                "yoluyla RGB ledlerin rengini kontrol\n" +
-                "edeceğiz.\n" +
+                "Bu uygulamada telefon üzerinden bluetooth yoluyla RGB ledlerin rengini kontrol edeceğiz.\n" +
                 "Devremiz aşağıdaki gibidir;")
         dersDetayTextList1.add("-Arduino Uno\n" +
                 "-Breadboard\n" +
@@ -1378,16 +1159,8 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-330 ohm direnç\n" +
                 "-Jumper kablo\n" +
                 "\n" +
-                "Toprak nem sensörü toprağa yerleştirilerek\n" +
-                "toprağın nemini ölçen bir sensördür.\n" +
-                "Sensörün üzerindeki potansiyometreyi\n" +
-                "ayarlayarak sensörün hangi değerde çıkış\n" +
-                "vereceğini belirleyebiliyoruz.İstersek\n" +
-                "analog çıkışını kullanarak kendimiz kod\n" +
-                "üzerinde de bunu yapabiliriz.\n" +
-                "Bu uygulamada sensörün dijital çıkışını\n" +
-                "kullanarak potansiyometre ile ayarlamasını\n" +
-                "yapacağız.")
+                "Toprak nem sensörü toprağa yerleştirilerek toprağın nemini ölçen bir sensördür.Sensörün üzerindeki potansiyometreyiayarlayarak sensörün hangi değerde çıkış vereceğini belirleyebiliyoruz.İstersek analog çıkışını kullanarak kendimiz kod üzerinde de bunu yapabiliriz.\n" +
+                "Bu uygulamada sensörün dijital çıkışını kullanarak potansiyometre ile ayarlamasını yapacağız.")
         dersDetayTextList1.add("-Arduino Uno\n" +
                 "-Breadboard\n" +
                 "-Yağmur sensörü\n" +
@@ -1395,12 +1168,9 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-330 ohm direnç\n" +
                 "-Jumper kablo\n" +
                 "\n" +
-                "Yağmur sensörü üzerine yağmur değdiği \n" +
-                "anda yağmurun seviyesine göre analog\n" +
-                "sinyal üreten bir sensördür.\n" +
+                "Yağmur sensörü üzerine yağmur değdiği anda yağmurun seviyesine göre analog sinyal üreten bir sensördür.\n" +
                 "\n" +
-                "Bu uygulamada yağmur yağmaya başladığında \n" +
-                "buzzer ın öteceği bir devre yapacağız.")
+                "Bu uygulamada yağmur yağmaya başladığında buzzer ın öteceği bir devre yapacağız.")
         dersDetayTextList1.add("-Arduino Uno\n" +
                 "-Breadboard\n" +
                 "-Gaz sensörü\n" +
@@ -1408,15 +1178,9 @@ class DersFragment : Fragment(),DersViewAdaptor.Listener {
                 "-330 ohm direnç\n" +
                 "-Jumper kablo\n" +
                 "\n" +
-                "Gaz sensörü ortamdaki gazı ölçerek,\n" +
-                "analog sinyal gönderen bir sensördür.\n" +
-                "istenirse sensör üzerindeki potansiyometre\n" +
-                "ile istenen sınır değer ayarlanarak \n" +
-                "dijital olarak ta çıkış verebilir.\n" +
+                "Gaz sensörü ortamdaki gazı ölçerek,analog sinyal gönderen bir sensördür.istenirse sensör üzerindeki potansiyometre ile istenen sınır değer ayarlanarak dijital olarak ta çıkış verebilir.\n" +
                 "\n" +
-                "Bu uygulamada ortamda gaz algılandığı zaman\n" +
-                "buzzer ötecek, ortamda gaz yoksa buzzer\n" +
-                "susacaktır.")
+                "Bu uygulamada ortamda gaz algılandığı zaman buzzer ötecek, ortamda gaz yoksa buzzer susacaktır.")
 
     }
 }

@@ -170,252 +170,128 @@ class EkstraFragment : Fragment(),DersViewAdaptor.Listener {
         //ekstraKonuList.add("Nasıl Kullanılır")
         //ekstraKonuList.add("Nasıl Kullanılır")
 
-        ekstraDetayTextList1.add("Breadboard elektronik devreleri\n" +
-                "lehimleme yapmadan kurmamıza yarar.\n" +
-                "Üzerinde devre elemanlarını ve \n" +
-                "jumper kabloları bağlayabilmek için\n" +
-                "delikler bulunur. Bu hatlar aslında\n" +
-                "belirli bir düzen içinde birbirleri\n" +
-                "ile bağlantılıdır.\n" +
+        ekstraDetayTextList1.add("Breadboard elektronik devreleri lehimleme yapmadan kurmamıza yarar.\n" +
+                "Üzerinde devre elemanlarını ve jumper kabloları bağlayabilmek için delikler bulunur. Bu hatlar aslınd belirli bir düzen içinde birbirleri ile bağlantılıdır.\n" +
                 "\n" +
                 "Bu bağlantılar aşağıdaki gibidir;")
-        ekstraDetayTextList1.add("Dirençler elektronik devrelerde\n" +
-                "akımı sınırlamak amacıyla kullanılırlar.\n" +
+        ekstraDetayTextList1.add("Dirençler elektronik devrelerde akımı sınırlamak amacıyla kullanılırlar.\n" +
                 "\n" +
-                "Birimi ohm dur. Direncin değerini\n" +
-                "bulabilmek için üzerindeki renklere\n" +
-                "bakmamız gerekir. Renk kodu tablosu\n" +
-                "aşağıda verilmiştir.")
-        ekstraDetayTextList1.add("Butonlar ve anahtarlar dijital giriş\n" +
-                "elemanlarıdır.Butonlar normalde açık\n" +
-                "yapıdadır, üzerine basılmadığı sürece\n" +
-                "üzerinden akım geçirmez. Üzerine \n" +
-                "basıldığı zaman kapalı konuma geçerek\n" +
+                "Birimi ohm dur. Direncin değerini bulabilmek için üzerindeki renklere bakmamız gerekir. Renk kodu tablosu aşağıda verilmiştir.")
+        ekstraDetayTextList1.add("Butonlar ve anahtarlar dijital giriş elemanlarıdır.Butonlar normalde açık yapıdadır, üzerine basılmadığı sürece üzerinden akım geçirmez. Üzerine basıldığı zaman kapalı konuma geçerek\n" +
                 "üzerinden akım geçirir. \n" +
                 "\n" +
-                "Butonları arduino ile kullanırken\n" +
-                "pull-down ya da pull up direnci\n" +
-                "kullanmak gerekmektedir.\n" +
+                "Butonları arduino ile kullanırken pull-down ya da pull up direnci kullanmak gerekmektedir.\n" +
                 "\n" +
-                "Butona basınca arduino ya 5v sinyal\n" +
-                "göndermek istiyorsak pull-down direnci\n" +
-                "kullanılmalıdır.\n" +
+                "Butona basınca arduino ya 5v sinyal göndermek istiyorsak pull-down direnci kullanılmalıdır.\n" +
                 "\n" +
-                "Butona basınca arduino ya 0v sinyal\n" +
-                "göndermek istiyorsak pull-up direnci\n" +
-                "kullanılmalıdır.\n" +
+                "Butona basınca arduino ya 0v sinyal göndermek istiyorsak pull-up direnci kullanılmalıdır.\n" +
                 "\n" +
                 "Bu direnç 10k ohm değerindedir.\n" +
                 "\n" +
                 "Buton bağlantısı aşağıdaki gibidir;")
-        ekstraDetayTextList1.add("Buzzer lar \"bip\" leme seslerini\n" +
-                "çıkaran devre elemanlarıdır.\n" +
+        ekstraDetayTextList1.add("Buzzer lar \"bip\" leme seslerini çıkaran devre elemanlarıdır.\n" +
                 "\n" +
-                "Projelerde uyarı seslerine ihtiyaç\n" +
-                "duyulduğu zaman buzzerlar kullanılır.\n" +
+                "Projelerde uyarı seslerine ihtiyaç duyulduğu zaman buzzerlar kullanılır.\n" +
                 "\n" +
-                "Buzzerlar uyarı sesleri çıkarttığı gibi\n" +
-                "melodiler de çıkarabilir.\n" +
+                "Buzzerlar uyarı sesleri çıkarttığı gibi melodiler de çıkarabilir.\n" +
                 "\n" +
                 "Buzzerların \"+\" ve \"-\" bacağı bulunur.\n" +
                 "\n" +
                 "Devre bağlantısı aşağıdaki gibidir;\n")
-        ekstraDetayTextList1.add("LCD ler istediğimiz verileri\n" +
-                "görüntüleyebilmek için kullandığımız\n" +
-                "ekranlardır. LCD lerde satır ve sütun\n" +
-                "bulunur. \n" +
-                "2x16 LCD de 2 tane satır ve her satırda\n" +
-                "16 tane sütun bulunur.\n" +
+        ekstraDetayTextList1.add("LCD ler istediğimiz verileri görüntüleyebilmek için kullandığımız ekranlardır. LCD lerde satır ve sütun bulunur. \n" +
+                "2x16 LCD de 2 tane satır ve her satırda 16 tane sütun bulunur.\n" +
                 "\n" +
                 "LCD bağlantısı aşağıdaki gibidir;")
         ekstraDetayTextList1.add("RFID Radyo frekansı ile tanımlamadır.\n" +
-                "Akbiller,Turnike giriş kartları\n" +
-                "RFID kartlara örnektir.\n" +
+                "Akbiller,Turnike giriş kartları RFID kartlara örnektir.\n" +
                 "\n" +
                 "Her RFID kartın bir ID si bulunur.\n" +
-                "RFID modülü ile bu ID leri tanıyarak\n" +
-                "ona göre işlemlerimizi gerçekleştiririz.\n" +
+                "RFID modülü ile bu ID leri tanıyarak ona göre işlemlerimizi gerçekleştiririz.\n" +
                 "\n" +
-                "RFID modülünün devre bağlantısı\n" +
-                "aşağıdaki gibidir;")
-        ekstraDetayTextList1.add("Servo motorlar açısal hareket eden\n" +
-                "motorlardır. istediğimiz açısal \n" +
-                "değere hareket ederek orada sabit kalır.\n" +
+                "RFID modülünün devre bağlantısı aşağıdaki gibidir;")
+        ekstraDetayTextList1.add("Servo motorlar açısal hareket eden motorlardır. istediğimiz açısal değere hareket ederek orada sabit kalır.\n" +
                 "\n" +
                 "Servo motorların 3 adet bacağı vardır.\n" +
                 "Bunlardan 2 tanesi besleme bacaklarıdır.\n" +
                 "Diğer bacak ise data bacağıdır.\n" +
                 "\n" +
-                "Servo motorları arduino ile kullanırken\n" +
-                "arduino nun akım değeri sınırlı olduğu\n" +
-                "için harici bir güç kaynağı ile \n" +
-                "beslemeyi tercih edeceğiz.\n" +
+                "Servo motorları arduino ile kullanırken arduino nun akım değeri sınırlı olduğu için harici bir güç kaynağı ile beslemeyi tercih edeceğiz.\n" +
                 "SG90 servo motorları 5v ile beslenir.\n" +
                 "\n" +
-                "Servo motorların arduinoya bağlantısı\n" +
-                "aşağıdaki gibidir;")
-        ekstraDetayTextList1.add("Kumanda modülleri kızılötesi sinyallerle\n" +
-                "çalışan modüllerdir.Kumanda kısmında\n" +
-                "IR verici sensörü, alıcı kısmında ise\n" +
-                "IR alıcı sensörü vardır.\n" +
-                "Kumandadan her tuşun bir seri numarası\n" +
-                "vardır ve bu tuşlara basıldığında\n" +
-                "kumanda alıcıya bu seri numaraları \n" +
-                "gönderir.\n" +
-                "Bu seri numaraları if komutları ile\n" +
-                "kontrol ederek istediğimiz cihazların\n" +
-                "kontrolünü sağlayabiliriz.\n" +
+                "Servo motorların arduinoya bağlantısı aşağıdaki gibidir;")
+        ekstraDetayTextList1.add("Kumanda modülleri kızılötesi sinyallerle çalışan modüllerdir.Kumanda kısmında IR verici sensörü, alıcı kısmında ise IR alıcı sensörü vardır.\n" +
+                "Kumandadan her tuşun bir seri numarası vardır ve bu tuşlara basıldığında kumanda alıcıya bu seri numaraları gönderir.\n" +
+                "Bu seri numaraları if komutları ile kontrol ederek istediğimiz cihazların kontrolünü sağlayabiliriz.\n" +
                 "\n" +
-                "Kumanda moodülünün devre kurulumu\n" +
-                "aşağıdaki gibidir;")
-        ekstraDetayTextList1.add("Keypad ler üzerinde rakam ve\n" +
-                "harflerin bulunduğu toplu tuş sistemidir.\n" +
-                "Bizim kullanacağımız keypad 4 satır ve\n" +
-                "4 sütundan oluşmakta. bağlantımızı ve \n" +
-                "kodlarımızı bu detaya göre oluşturuyoruz.\n" +
+                "Kumanda moodülünün devre kurulumu aşağıdaki gibidir;")
+        ekstraDetayTextList1.add("Keypad ler üzerinde rakam ve harflerin bulunduğu toplu tuş sistemidir.\n" +
+                "Bizim kullanacağımız keypad 4 satır ve 4 sütundan oluşmakta. bağlantımızı ve kodlarımızı bu detaya göre oluşturuyoruz.\n" +
                 "\n" +
-                "Keypad in arduino ya bağlantısı \n" +
-                "aşağıdaki gibidir;\n")
-        ekstraDetayTextList1.add("Joystickler potansiyometreye benzer bir\n" +
-                "mantıkla çalışırlar. Yatay ve Dikey \n" +
-                "olarak iki çıkışı vardır. Bu çıkışlar\n" +
-                "analog sinyal üretirler.\n" +
-                "Joytick in üzerine basınca çıkış veren\n" +
-                "bir de butonu bulunmaktadır.\n" +
+                "Keypad in arduino ya bağlantısı aşağıdaki gibidir;\n")
+        ekstraDetayTextList1.add("Joystickler potansiyometreye benzer bir mantıkla çalışırlar. Yatay ve Dikey olarak iki çıkışı vardır. Bu çıkışlar analog sinyal üretirler.\n" +
+                "Joytick in üzerine basınca çıkış veren bir de butonu bulunmaktadır.\n" +
                 "\n" +
-                "Joystick modülünün Arduino bağlantısı\n" +
-                "aşağıdaki gibidir;")
-        ekstraDetayTextList1.add("Step motorlar adım adım hareket\n" +
-                "ettirebildiğimiz motorlardır.\n" +
-                "Her bir step motorun her bir adımda\n" +
-                "alacağı yol değişiklik gösterebilir.\n" +
-                "Bu sebeple step motorların bilgi \n" +
-                "kağıtlarını incelemek önemlidir.\n" +
+                "Joystick modülünün Arduino bağlantısı aşağıdaki gibidir;")
+        ekstraDetayTextList1.add("Step motorlar adım adım hareket ettirebildiğimiz motorlardır.\n" +
+                "Her bir step motorun her bir adımda alacağı yol değişiklik gösterebilir.\n" +
+                "Bu sebeple step motorların bilgi kağıtlarını incelemek önemlidir.\n" +
                 "\n" +
-                "Biz 28byj-48 model step motorun\n" +
-                "çalışmasını inceleyeceğiz ve buton\n" +
-                "ile nasıl kontrol edildiğini göreceğiz.\n" +
+                "Biz 28byj-48 model step motorun çalışmasını inceleyeceğiz ve buton ile nasıl kontrol edildiğini göreceğiz.\n" +
                 "\n" +
-                "Step motorlar step motor sürücü ile \n" +
-                "birlikte kullanılır. Biz uln2003 sürücü\n" +
-                "kullanacağız.\n" +
+                "Step motorlar step motor sürücü ile birlikte kullanılır. Biz uln2003 sürücü kullanacağız.\n" +
                 "\n" +
-                "Step motor ve sürücü devre bağlantısı\n" +
-                "aşağıdaki gibi yapılır;")
-        ekstraDetayTextList1.add("DC motorlar adı üzerinde DC gerilimle\n" +
-                "çalışan motorlardır. Motorlar yüksek\n" +
-                "akım çektikleri için Ardunio ya doğrudan\n" +
-                "bağlanamazar. Bu sebeple L298N Motor\n" +
-                "sürücüleri kullanılabilir.\n" +
+                "Step motor ve sürücü devre bağlantısı aşağıdaki gibi yapılır;")
+        ekstraDetayTextList1.add("DC motorlar adı üzerinde DC gerilimle çalışan motorlardır. Motorlar yüksek akım çektikleri için Ardunio ya doğrudan bağlanamazar. Bu sebeple L298N Motor sürücüleri kullanılabilir.\n" +
                 "\n" +
-                "L298N sürücüye motor için ayrı bir\n" +
-                "güç kaynağı bağlanır. Arduino dan aldığıa\n" +
-                "sinyalleri yükselterek motora iletir.\n" +
+                "L298N sürücüye motor için ayrı bir güç kaynağı bağlanır. Arduino dan aldığıa sinyalleri yükselterek motora iletir.\n" +
                 "\n" +
-                "L298N ile iki ayrı motor kullanılabilir\n" +
-                "ve bu motorların hızları da kontrol\n" +
-                "edilebilir.\n" +
+                "L298N ile iki ayrı motor kullanılabilir ve bu motorların hızları da kontrol edilebilir.\n" +
                 "\n" +
-                "DC motor ve L298N bağlantısı aşağıdaki\n" +
-                "gibidir;")
-        ekstraDetayTextList1.add("HC-SR04 Ultrasonik sensör mesafe\n" +
-                "ölçümleri yapabilmek için kullanılan \n" +
-                "sensör çeşididir. Ultrasonik seslerin\n" +
-                "hızını ölçerek mesafeyi bulmamızı\n" +
-                "sağlar.\n" +
+                "DC motor ve L298N bağlantısı aşağıdaki gibidir;")
+        ekstraDetayTextList1.add("HC-SR04 Ultrasonik sensör mesafe ölçümleri yapabilmek için kullanılan sensör çeşididir. Ultrasonik seslerin hızını ölçerek mesafeyi bulmamızı sağlar.\n" +
                 "\n" +
-                "Üzerinde Ultrasonik ses dalgası gönderen\n" +
-                "bir hoparlör ve bu dalgayı yakalayan\n" +
-                "mikrofon ile çalışır.\n" +
+                "Üzerinde Ultrasonik ses dalgası gönderen bir hoparlör ve bu dalgayı yakalayan mikrofon ile çalışır.\n" +
                 "\n" +
-                "Trig pinine sinyal verdiğimizde hoparlör\n" +
-                "ses dalgası gönderir ve bu dalga karşı\n" +
-                "tarafa yansıyıp geri döndüğünde mikrofon\n" +
-                "dalgayı yakalar. Arada geçen süreyi\n" +
-                "bularak mesafemizi bulmuş oluruz.")
-        ekstraDetayTextList1.add("LCD ler i2C modülü ile çok daha az \n" +
-                "pin bağlantısı yaparak kullanılabilir.\n" +
+                "Trig pinine sinyal verdiğimizde hoparlör ses dalgası gönderir ve bu dalga karşı tarafa yansıyıp geri döndüğünde mikrofon dalgayı yakalar. Arada geçen süreyi bularak mesafemizi bulmuş oluruz.")
+        ekstraDetayTextList1.add("LCD ler i2C modülü ile çok daha az pin bağlantısı yaparak kullanılabilir.\n" +
                 "\n" +
-                "LCD ler kendinden i2C modüllü olarak \n" +
-                "satılabiliyor, alırken buna dikkat \n" +
-                "edilebilir.\n" +
+                "LCD ler kendinden i2C modüllü olarak satılabiliyor, alırken buna dikkat edilebilir.\n" +
                 "\n" +
-                "i2C modüllü LCD bağlantısı aşağıdaki\n" +
-                "gibidir;\n" +
+                "i2C modüllü LCD bağlantısı aşağıdaki gibidir;\n" +
                 "\n")
-        ekstraDetayTextList1.add("Protoshield lar içinde breadboard\n" +
-                "bulunan, bu sayede devre elemanlarını\n" +
-                "üzerine kurabildiğimiz cihazlardır.\n" +
+        ekstraDetayTextList1.add("Protoshield lar içinde breadboard bulunan, bu sayede devre elemanlarını üzerine kurabildiğimiz cihazlardır.\n" +
                 "\n" +
-                "Protoshiled üzerinde ayrıca delikli\n" +
-                "bakır plaket mevcuttur. Üzerindeki\n" +
-                "Breadboard ı çıkartarak devre\n" +
-                "elemanlarını lehimleyebilirsiniz.")
-        ekstraDetayTextList1.add("RGB ledler istediğimiz her renkte\n" +
-                "ışık yayabilen led çeşididir.\n" +
-                "4 ader bacağı vardır. Bunlardan üçü\n" +
-                "renk bacakları, biri ise ortak bacaktır.\n" +
+                "Protoshiled üzerinde ayrıca delikli bakır plaket mevcuttur. Üzerindeki Breadboard ı çıkartarak devre elemanlarını lehimleyebilirsiniz.")
+        ekstraDetayTextList1.add("RGB ledler istediğimiz her renkte ışık yayabilen led çeşididir.\n" +
+                "4 ader bacağı vardır. Bunlardan üçü renk bacakları, biri ise ortak bacaktır.\n" +
                 "\n" +
-                "Ortak Anotlu ve Ortat Katotlu olmak\n" +
-                "üzere iki çeşidi vardır.\n" +
-                "Ortak Anotlu olanda ortak uca \"+\"\n" +
-                "sinyal verilir ve renk uçlarına\n" +
-                "\"-\" sinyal verilir.\n" +
+                "Ortak Anotlu ve Ortat Katotlu olmak üzere iki çeşidi vardır.\n" +
+                "Ortak Anotlu olanda ortak uca \"+\" sinyal verilir ve renk uçlarına \"-\" sinyal verilir.\n" +
                 "\n" +
-                "Ortak Katotlu olanda ise ortak uca \"-\"\n" +
-                "sinyal verilir ve renk uçlarına \"+\"\n" +
-                "sinyal verilir.\n" +
+                "Ortak Katotlu olanda ise ortak uca \"-\" sinyal verilir ve renk uçlarına \"+\" sinyal verilir.\n" +
                 "\n" +
-                "RGB Ledler ve bağlantıları aşağıdaki\n" +
-                "gibidir;")
-        ekstraDetayTextList1.add("PIR sensörü ortamdaki kızılötesi ısı\n" +
-                "değişimini algılayarak o ortamdaki\n" +
-                "hareketi tespit edebilen sensördür.\n" +
+                "RGB Ledler ve bağlantıları aşağıdaki gibidir;")
+        ekstraDetayTextList1.add("PIR sensörü ortamdaki kızılötesi ısı değişimini algılayarak o ortamdaki hareketi tespit edebilen sensördür.\n" +
                 "\n" +
                 "Sensör üzerinde 2 adet pot vardır.\n" +
-                "Potlardan birisi hareket alanını 3 ile\n" +
-                "5 metre arasında ayarlamaktadır.\n" +
+                "Potlardan birisi hareket alanını 3 ile 5 metre arasında ayarlamaktadır.\n" +
                 "\n" +
-                "Diğer pot ile de hareket alğılandığında\n" +
-                "sensörün kaç saniye süreyle çıkış \n" +
-                "vereceği ayarlanmaktadır.\n" +
+                "Diğer pot ile de hareket alğılandığında sensörün kaç saniye süreyle çıkış vereceği ayarlanmaktadır.\n" +
                 "\n" +
-                "PIR sensörünün Arduino bağlantısı\n" +
-                "aşağıdaki gibidir;")
-        ekstraDetayTextList1.add("DHT11 ortamdaki sıcaklık ve nem \n" +
-                "değerlerini alabilen dijital bir\n" +
-                "sensördür. Üzerinde 4 adet pin vardır,\n" +
-                "ancak 3 tanesini kullanmak yeterli\n" +
-                "olmaktadır.\n" +
+                "PIR sensörünün Arduino bağlantısı aşağıdaki gibidir;")
+        ekstraDetayTextList1.add("DHT11 ortamdaki sıcaklık ve nem değerlerini alabilen dijital bir sensördür. Üzerinde 4 adet pin vardır,ancak 3 tanesini kullanmak yeterli olmaktadır.\n" +
                 "\n" +
-                "DHT11 sensörün bağlantısı aşağıdaki\n" +
-                "gibidir;")
-        ekstraDetayTextList1.add("Röleler küçük gerilimler ile büyük\n" +
-                "gerilimleri kontrol etmek için \n" +
-                "kullanılan devre elemanlarıdır.\n" +
+                "DHT11 sensörün bağlantısı aşağıdaki gibidir;")
+        ekstraDetayTextList1.add("Röleler küçük gerilimler ile büyük gerilimleri kontrol etmek için kullanılan devre elemanlarıdır.\n" +
                 "\n" +
-                "Yani röleler sayesinde Arduinodan gelen\n" +
-                "5V luk çıkış sinyali ile 220V luk bir\n" +
-                "cihazı kontrol edebiliriz.\n" +
+                "Yani röleler sayesinde Arduinodan gelen 5V luk çıkış sinyali ile 220V luk bir cihazı kontrol edebiliriz.\n" +
                 "\n" +
-                "Röleler elektromıknatıs özelliği ile \n" +
-                "çalışır. bobin uçlarına sinyal verildiği\n" +
-                "zaman içindeki anahtar konum değiştirir.\n" +
+                "Röleler elektromıknatıs özelliği ile çalışır. bobin uçlarına sinyal verildiği zaman içindeki anahtar konum değiştirir.\n" +
                 "\n" +
-                "NOT=220V yüksek gerilim olduğu için \n" +
-                "çalışmadan önce her türlü güvenlik \n" +
-                "önlemi alınmalıdır. 220V Elektrik \n" +
-                "devreleri hakkında bir bilginiz ya da \n" +
-                "yeterliliğiniz yoksa 220v ile devre \n" +
-                "kurmamalısınız.\n" +
+                "NOT=220V yüksek gerilim olduğu için çalışmadan önce her türlü güvenlik önlemi alınmalıdır. 220V Elektrik devreleri hakkında bir bilginiz ya da yeterliliğiniz yoksa 220v ile devre kurmamalısınız.\n" +
                 "\n" +
-                "Röle bağlantısı aşağıdaki yapılır;")
-        ekstraDetayTextList1.add("IR alıcı verici sensörü sensör\n" +
-                "uçlarında bir cisim algıladığı zaman\n" +
-                "5V sinyal veren sensördür. Sensörün\n" +
-                "üzerinde trimpot bulunur ve bu trimpotu\n" +
-                "ayarlayarak sensörün algılama mesafesini\n" +
-                "ayarlayabiliriz.")
+                "Röle bağlantısı aşağıdaki gibi yapılır;")
+        ekstraDetayTextList1.add("IR alıcı verici sensörü sensör uçlarında bir cisim algıladığı zaman 5V sinyal veren sensördür. Sensörün üzerinde trimpot bulunur ve bu trimpotu ayarlayarak sensörün algılama mesafesini ayarlayabiliriz.")
 
 
 
@@ -466,126 +342,62 @@ class EkstraFragment : Fragment(),DersViewAdaptor.Listener {
 
 
 
-        ekstraDetayTextList2.add("Breadboard un iç yapısına göre \n" +
-                "devre elemanlarının bağlantıları\n" +
-                "yapılabilir. Devre elemanları arasında\n" +
-                "bağlantıyı sağlamak için jumper kablolar\n" +
-                "kullanılır.\n" +
+        ekstraDetayTextList2.add("Breadboard un iç yapısına göre devre elemanlarının bağlantıları yapılabilir. Devre elemanları arasında bağlantıyı sağlamak için jumper kablolar kullanılır.\n" +
                 "\n" +
-                "Bir devrenin şeması ile breadboard\n" +
-                "üzerine kurulum örnekleri aşağıdaki\n" +
-                "gibidir;")
+                "Bir devrenin şeması ile breadboard üzerine kurulum örnekleri aşağıdaki gibidir;")
         ekstraDetayTextList2.add("Ledler ışık yayan diyot çeşididir.\n" +
-                "2 adet bacağı vardır. Bu bacaklardan \n" +
-                "birisi Anot \"+\", diğeri Katot \"-\" \n" +
-                "bacağıdır. Doğru bacaklara gerilim \n" +
-                "verildiği zaman ışık yaymaktadır.\n" +
+                "2 adet bacağı vardır. Bu bacaklardan birisi Anot \"+\", diğeri Katot \"-\" bacağıdır. Doğru bacaklara gerilim verildiği zaman ışık yaymaktadır.\n" +
                 "\n" +
-                "Ledler yüksek gerilime maruz kaldığı\n" +
-                "zaman bozulmaktadırlar. Bu durumun \n" +
-                "önüne geçmek için ledlerin önüne\n" +
-                "koruma direnci bağlanmalıdır.\n" +
+                "Ledler yüksek gerilime maruz kaldığı zaman bozulmaktadırlar. Bu durumun önüne geçmek için ledlerin önüne koruma direnci bağlanmalıdır.\n" +
                 "\n" +
-                "Ledler ortalama 3.2V ile ve 20mA akım\n" +
-                "ile çalışır diye düşünerek direncin\n" +
-                "değerini buna göre bulabiliriz.\n" +
+                "Ledler ortalama 3.2V ile ve 20mA akım ile çalışır diye düşünerek direncin değerini buna göre bulabiliriz.\n" +
                 "\n" +
-                "Arduino pinlerinden 5v çıkış geldiği\n" +
-                "için ledlerin önüne 220 ohm direnç\n" +
-                "koymak yeterli olacaktır")
-        ekstraDetayTextList2.add("Anahtarlar da buton gibi pull-up ve \n" +
-                "pull-down direncine ihtiyaç duyar.")
-        ekstraDetayTextList2.add("Buzzerları çalıştırmak için aşağıdaki\n" +
-                "kodları kullanabiliriz;\n")
-        ekstraDetayTextList2.add("LCD yi kontrol etmek için LiquidCrystal\n" +
-                "kütüphanesini kullanıyoruz.\n" +
-                "Bu kütüphane sayesinde çok basit \n" +
-                "komutlar ile LCD ye istediğimiz \n" +
-                "şeyleri yazdırabiliriz.")
-        ekstraDetayTextList2.add("RFID Modülü 3.3V ile çalıştığı için\n" +
-                "Arduino 3.3V pinine bağlayarak\n" +
-                "beslememiz gerekiyor.\n" +
+                "Arduino pinlerinden 5v çıkış geldiği için ledlerin önüne 220 ohm direnç koymak yeterli olacaktır")
+        ekstraDetayTextList2.add("Anahtarlar da buton gibi pull-up ve pull-down direncine ihtiyaç duyar.")
+        ekstraDetayTextList2.add("Buzzerları çalıştırmak için aşağıdaki kodları kullanabiliriz;\n")
+        ekstraDetayTextList2.add("LCD yi kontrol etmek için LiquidCrystal kütüphanesini kullanıyoruz.\n" +
+                "Bu kütüphane sayesinde çok basit komutlar ile LCD ye istediğimiz şeyleri yazdırabiliriz.")
+        ekstraDetayTextList2.add("RFID Modülü 3.3V ile çalıştığı için Arduino 3.3V pinine bağlayarak beslememiz gerekiyor.\n" +
                 "\n" +
-                "IRQ pinini bağlamamıza gerek olmadığı\n" +
-                "için bağlantısını yapmıyoruz.\n" +
+                "IRQ pinini bağlamamıza gerek olmadığı için bağlantısını yapmıyoruz.\n" +
                 "\n" +
-                "RFID yi kullanırken RFID kütüphanesini\n" +
-                "kullanacağız.\n" +
+                "RFID yi kullanırken RFID kütüphanesini kullanacağız.\n" +
                 "\n")
-        ekstraDetayTextList2.add("Servoları Servo.h isimli kütüphane\n" +
-                "içindeki kodlar yardımıyla kodluyoruz.\n" +
-                "Bu kütüphane Arduino nun içinde \n" +
-                "hazırda bulunduğu için indirmemize\n" +
+        ekstraDetayTextList2.add("Servoları Servo.h isimli kütüphane içindeki kodlar yardımıyla kodluyoruz.\n" +
+                "Bu kütüphane Arduino nun içinde hazırda bulunduğu için indirmemize\n" +
                 "gerek bulunmaz.\n" +
                 "\n" +
-                "Servoyu aşağıdaki kodlarla kontrol\n" +
-                "edebiliriz.")
-        ekstraDetayTextList2.add("Kumanda modülünü kullanmak için\n" +
-                "IRremote.h isimli kütüphaneyi kullanırız.\n" +
+                "Servoyu aşağıdaki kodlarla kontrol edebiliriz.")
+        ekstraDetayTextList2.add("Kumanda modülünü kullanmak için IRremote.h isimli kütüphaneyi kullanırız.\n" +
                 "\n" +
-                "Kumanda modülünü aşağıdaki kodlarla\n" +
-                "kullanabiliriz.")
-        ekstraDetayTextList2.add("Keydap in soldan ilk 4 pini satır,\n" +
-                "son 4 pini ise sütun pinleridir.\n" +
+                "Kumanda modülünü aşağıdaki kodlarla kullanabiliriz.")
+        ekstraDetayTextList2.add("Keydap in soldan ilk 4 pini satır,son 4 pini ise sütun pinleridir.\n" +
                 "\n" +
-                "Bu detaya özellikle kodlama kısmında\n" +
-                "dikkat edilmesi gerekmektedir.\n" +
+                "Bu detaya özellikle kodlama kısmında dikkat edilmesi gerekmektedir.\n" +
                 "\n" +
                 "Keypad aşağıdaki kodlarla kullanılabilir;")
-        ekstraDetayTextList2.add("Joystick modülünü aşağıdaki kodlarla\n" +
-                "kullanabiliriz;")
-        ekstraDetayTextList2.add("28byj-48 Step motoru devir başına\n" +
-                "28 adım ilerler. Bu bilgi kodlamada\n" +
-                "önemli olacaktır. Siz başka bir\n" +
-                "Step motor denerseniz bile sadece\n" +
-                "kod kısmında bu değeri değiştirerek\n" +
-                "step motorunuzu çalıştırabilirsiniz.\n" +
+        ekstraDetayTextList2.add("Joystick modülünü aşağıdaki kodlarla kullanabiliriz;")
+        ekstraDetayTextList2.add("28byj-48 Step motoru devir başına 28 adım ilerler. Bu bilgi kodlamada önemli olacaktır. Siz başka bir\n" +
+                "Step motor denerseniz bile sadece kod kısmında bu değeri değiştirerek step motorunuzu çalıştırabilirsiniz.\n" +
                 "\n" +
-                "Step motorları aşağıdaki gibi\n" +
-                "kullanabiliriz.")
-        ekstraDetayTextList2.add("Burada önemli olan nokta eğer motorlarda\n" +
-                "hız kontrolü yapmayacaksak, EnA ve EnB\n" +
-                "pinlerini doğrudan 5V a bağlamamız gerek.\n" +
-                "Bu şekilde motorlar normal hızında \n" +
-                "çalışacaktır. EnA ve EnB pinlerinin \n" +
-                "hemen üstlerinde 5V pinleri vardır.\n" +
-                "Bu pinlere kısa devre headerleri \n" +
-                "ile bağlanabilirler.\n" +
+                "Step motorları aşağıdaki gibi kullanabiliriz.")
+        ekstraDetayTextList2.add("Burada önemli olan nokta eğer motorlarda hız kontrolü yapmayacaksak, EnA ve EnB pinlerini doğrudan 5V a bağlamamız gerek.\n" +
+                "Bu şekilde motorlar normal hızında çalışacaktır. EnA ve EnB pinlerinin hemen üstlerinde 5V pinleri vardır.\n" +
+                "Bu pinlere kısa devre headerleri ile bağlanabilirler.\n" +
                 "\n" +
-                "Motorlarda hız kontrolü yapılacaksa\n" +
-                "EnA ve EnB pinlerinin Arduino nun PWM\n" +
-                "sinyal üreten pinlerine bağlanmaları\n" +
-                "gerekiyor.")
-        ekstraDetayTextList2.add("HC-SR04 Ultrasonik sensörü istersek\n" +
-                "kendimiz matematiksel kodlar kullanarak\n" +
-                "mesafe ölçümü yapabiliriz. Ancak\n" +
-                "kütüphane yardımıyla da kolay şekilde\n" +
-                "mesafe alabiliriz.\n" +
+                "Motorlarda hız kontrolü yapılacaksa EnA ve EnB pinlerinin Arduino nun PWM sinyal üreten pinlerine bağlanmaları gerekiyor.")
+        ekstraDetayTextList2.add("HC-SR04 Ultrasonik sensörü istersek kendimiz matematiksel kodlar kullanarak mesafe ölçümü yapabiliriz. Ancak kütüphane yardımıyla da kolay şekilde mesafe alabiliriz.\n" +
                 "\n" +
-                "Biz burada kütüphane ile kolay bir \n" +
-                "şekilde kullanımını yapacağız.\n")
-        ekstraDetayTextList2.add("i2C modüllü lcd nin kullanımı normal\n" +
-                "lcd den çok farklı değildir. sadece\n" +
-                "farklı bir kütüphane kullanıp bir kaç\n" +
-                "farklı kod yazılır. lcd işlem kodları\n" +
-                "aynıdır.\n" +
+                "Biz burada kütüphane ile kolay bir şekilde kullanımını yapacağız.\n")
+        ekstraDetayTextList2.add("i2C modüllü lcd nin kullanımı normal lcd den çok farklı değildir. sadece farklı bir kütüphane kullanıp bir kaç farklı kod yazılır. lcd işlem kodları aynıdır.\n" +
                 "\n" +
-                "LCD nin kontras ayarı ldr nin \n" +
-                "arkasındaki trimpot ile yapılır.")
-        ekstraDetayTextList2.add("Protoshield üzerine devre elemanlarını\n" +
-                "aşağıdaki gibi bağlayabilirsiniz;")
-        ekstraDetayTextList2.add("RGB lerin Ortak anotlu ve Ortak katotlu\n" +
-                "modelleri aşağıdaki kodlarla \n" +
-                "kullanılabilir;")
-        ekstraDetayTextList2.add("PIR sensörünü aşağıdaki kodlar ile\n" +
-                "kullanabiliriz;")
-        ekstraDetayTextList2.add("DHT11 sensörünü kütüphane ile kullanarak\n" +
-                "kolay kodlarla sıcaklık ve nem değerini\n" +
-                "alabiliriz;")
-        ekstraDetayTextList2.add("Röleler aşağıdaki gibi kodlanarak\n" +
-                "kullanılabilirler;")
-        ekstraDetayTextList2.add("Sensörü aşağıdaki gibi kodlayarak\n" +
-                "kullanabilirsiniz;")
+                "LCD nin kontras ayarı ldr nin arkasındaki trimpot ile yapılır.")
+        ekstraDetayTextList2.add("Protoshield üzerine devre elemanlarını aşağıdaki gibi bağlayabilirsiniz;")
+        ekstraDetayTextList2.add("RGB lerin Ortak anotlu ve Ortak katotlu modelleri aşağıdaki kodlarla kullanılabilir;")
+        ekstraDetayTextList2.add("PIR sensörünü aşağıdaki kodlar ile kullanabiliriz;")
+        ekstraDetayTextList2.add("DHT11 sensörünü kütüphane ile kullanarak kolay kodlarla sıcaklık ve nem değerini alabiliriz;")
+        ekstraDetayTextList2.add("Röleler aşağıdaki gibi kodlanarak kullanılabilirler;")
+        ekstraDetayTextList2.add("Sensörü aşağıdaki gibi kodlayarak kullanabilirsiniz;")
 
 
 

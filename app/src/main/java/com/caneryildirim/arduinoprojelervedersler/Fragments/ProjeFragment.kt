@@ -120,10 +120,6 @@ class ProjeFragment : Fragment(),ProjeViewAdapter.Listener{
         projeNoList.add("Hesap Makinesi")
 
 
-
-
-
-
         projeKonuList.add("HC-SR04 mesafe sensörü")
         projeKonuList.add("Kızılötesi sensör")
         projeKonuList.add("RTC modülü")
@@ -137,10 +133,6 @@ class ProjeFragment : Fragment(),ProjeViewAdapter.Listener{
         projeKonuList.add("Sumo kiti ile")
         projeKonuList.add("GY 906")
         projeKonuList.add("TFT ekran ")
-
-
-
-
 
         imageProjeList.add(R.drawable.proje2)
         imageProjeList.add(R.drawable.proje3)
@@ -234,9 +226,7 @@ class ProjeFragment : Fragment(),ProjeViewAdapter.Listener{
                 "-HCSR06 Bluetooth Modülü\n" +
                 "-Labirent 3b Yazıcı parçaları\n" +
                 "\n" +
-                "Kodu indir butonuna basarak kodlarla\n" +
-                "beraber 3b yazıcı dosyalarına da \n" +
-                "ulaşabilirsiniz.")
+                "Kodu indir butonuna basarak kodlarla beraber 3b yazıcı dosyalarına da ulaşabilirsiniz.")
         projeDetayTextList1.add("-Arduino Uno\n" +
                 "-Pulse Sensörü\n" +
                 "-2x16 LCD Ekran\n" +
@@ -252,18 +242,15 @@ class ProjeFragment : Fragment(),ProjeViewAdapter.Listener{
                 "-2 li AA Pil Yuvası\n" +
                 "-3D yazıcı parçaları\n" +
                 "\n" +
-                "Robotun 3b yazıcı dosyalarına kodları\n" +
-                "indir butonuna basarak ulaşabilirsiniz.\n")
+                "Robotun 3b yazıcı dosyalarına kodları indir butonuna basarak ulaşabilirsiniz.\n")
         projeDetayTextList1.add("-Arduino Nano\n" +
                 "-TCS34725 RGB Renk Algılama Sensörü\n" +
                 "-2 Adet Sg90 Servo\n" +
                 "-3b Yazıcı Parçaları\n" +
                 "\n" +
-                "3b yazıcı dosyalarına kodları indir\n" +
-                "butonuna basarak ulaşabilirsiniz.\n" +
+                "3b yazıcı dosyalarına kodları indir butonuna basarak ulaşabilirsiniz.\n" +
                 "\n" +
-                "Projede kullanılan renkler aşağıdaki\n" +
-                "gibidir;\n" +
+                "Projede kullanılan renkler aşağıdaki gibidir;\n" +
                 "-Kırmızı\n" +
                 "-Pik Yeşil\n" +
                 "-Sarı\n" +
@@ -339,10 +326,7 @@ class ProjeFragment : Fragment(),ProjeViewAdapter.Listener{
         projeDetayImageList2.add(proje13ImageList2)
 
 
-        projeDetayTextList2.add("Projede Mesafe sensöründen gelen \n" +
-                "bilgiye göre robot karşısında bir\n" +
-                "engel aldıladığında yön değiştirerek\n" +
-                "engelden kurtulmaya çalışacaktır.\n" +
+        projeDetayTextList2.add("Projede Mesafe sensöründen gelen bilgiye göre robot karşısında bir engel aldıladığında yön değiştirerek engelden kurtulmaya çalışacaktır.\n" +
                 "\n" +
                 "Projenin kodları aşağıdadır;\n" +
                 "\n" +
@@ -491,11 +475,7 @@ class ProjeFragment : Fragment(),ProjeViewAdapter.Listener{
                 "}\n" +
                 "\n" +
                 "--------------------------------------")
-        projeDetayTextList2.add("Projenin çalışması için DS1302 isimli\n" +
-                "kütüphanenin arduino programına\n" +
-                "kurulması gerekmektedir. Kodu indir\n" +
-                "butonuna basarak hem kodu hem de \n" +
-                "kütüphaneyi indirebilirsiniz.\n" +
+        projeDetayTextList2.add("Projenin çalışması için DS1302 isimli kütüphanenin arduino programına kurulması gerekmektedir. Kodu indir butonuna basarak hem kodu hem de kütüphaneyi indirebilirsiniz.\n" +
                 "\n" +
                 "Projenin kodları aşağıdadır;\n" +
                 "\n" +
@@ -523,9 +503,7 @@ class ProjeFragment : Fragment(),ProjeViewAdapter.Listener{
                 "  lcd.init();\n" +
                 "  lcd.backlight();\n" +
                 "\n" +
-                " //Güncel Gün Saat ve tarihi \n" +
-                "  buradan kendinize göre \n" +
-                "  ayarlayabilirsiniz\n" +
+                " //Güncel Gün Saat ve tarihi buradan kendinize göre ayarlayabilirsiniz\n" +
                 "\n" +
                 "  rtc.setDOW(SUNDAY);       \n" +
                 "  rtc.setTime(11, 32, 0);     \n" +
@@ -568,14 +546,9 @@ class ProjeFragment : Fragment(),ProjeViewAdapter.Listener{
                 "  lcd.print(rtc.getTimeStr());\n" +
                 "}\n" +
                 "--------------------------------------")
-        projeDetayTextList2.add("Projenin çalışabilmesi için RFID \n" +
-                "kütüphanesinin yüklenmesi gerekmektedir.\n" +
+        projeDetayTextList2.add("Projenin çalışabilmesi için RFID kütüphanesinin yüklenmesi gerekmektedir.\n" +
                 "\n" +
-                "Arduino programında \n" +
-                "Araçlar-> Kütüphaneleri Yönet\n" +
-                "sekmesine girilerek arama kısmına\n" +
-                "mfrc522 yazıp aynı isimli kütüphane\n" +
-                "yüklenerek kütüphane indirilir.\n" +
+                "Arduino programında Araçlar-> Kütüphaneleri Yönet sekmesine girilerek arama kısmına mfrc522 yazıp aynı isimli kütüphane yüklenerek kütüphane indirilir.\n" +
                 "\n" +
                 "Projeye ait kodlar aşağıdadır;\n" +
                 "\n" +
@@ -631,13 +604,8 @@ class ProjeFragment : Fragment(),ProjeViewAdapter.Listener{
                 "  Serial.println(\"\");\n" +
                 "}\n" +
                 "-------------------------------------")
-        projeDetayTextList2.add("Projenin kodları hazır olarak\n" +
-                "AdafruitTFTLCD kütüphanesinde bulunduğu\n" +
-                "için burada tekrar yazılmamıştır.\n")
-        projeDetayTextList2.add("Bluetooth modülünün uygulama ile nasıl\n" +
-                "çalıştığına dersler bölümünde yer \n" +
-                "verildiği için bu kısımda sadece kodlar\n" +
-                "paylaşılacaktır;\n" +
+        projeDetayTextList2.add("Projenin kodları hazır olarak AdafruitTFTLCD kütüphanesinde bulunduğu için burada tekrar yazılmamıştır.\n")
+        projeDetayTextList2.add("Bluetooth modülünün uygulama ile nasıl çalıştığına dersler bölümünde yer verildiği için bu kısımda sadece kodlar paylaşılacaktır;\n" +
                 "\n" +
                 "--------------------------------------\n" +
                 " \n" +
@@ -761,12 +729,7 @@ class ProjeFragment : Fragment(),ProjeViewAdapter.Listener{
                 "    }  \n" +
                 "}\n" +
                 "-------------------------------------\n")
-        projeDetayTextList2.add("Projeye ait VarSpeedServo isimli \n" +
-                "kütüphaneyi ve labirentin çalışması\n" +
-                "için gerekli olan telefon uygulamasını\n" +
-                "ayrıca 3b yazıcı dosyaları ile \n" +
-                "proje kodlarını aşağıdaki kodları\n" +
-                "indir butonuna basarak indirebilirsiniz.\n" +
+        projeDetayTextList2.add("Projeye ait VarSpeedServo isimli kütüphaneyi ve labirentin çalışması için gerekli olan telefon uygulamasını ayrıca 3b yazıcı dosyaları ile proje kodlarını aşağıdaki kodları indir butonuna basarak indirebilirsiniz.\n" +
                 "\n" +
                 "--------------------------------------\n" +
                 " \n" +
@@ -810,10 +773,7 @@ class ProjeFragment : Fragment(),ProjeViewAdapter.Listener{
                 "delay(70); \n" +
                 "}\n" +
                 "-------------------------------------\n")
-        projeDetayTextList2.add("Projeye ait PulseSensorPlayground \n" +
-                "isimli kütüphane, Araçlar-> Kütüphane\n" +
-                "yöneticisi ne girerek, arama kısmına \n" +
-                "yazılıp kurulmalıdır.\n" +
+        projeDetayTextList2.add("Projeye ait PulseSensorPlayground isimli kütüphane, Araçlar-> Kütüphane yöneticisi ne girerek, arama kısmına yazılıp kurulmalıdır.\n" +
                 "\n" +
                 "--------------------------------------\n" +
                 " #include<LiquidCrystal.h>\n" +
@@ -864,20 +824,10 @@ class ProjeFragment : Fragment(),ProjeViewAdapter.Listener{
                 "}\n" +
                 "\n" +
                 "-------------------------------------\n")
-        projeDetayTextList2.add("Otto programı indirdikten sonra \n" +
-                "libraries kısmını arduino’nun \n" +
-                "içindeki libraries kısmına kopyalıyoruz.\n" +
-                "Sonra servo home programını çalıştırıp\n" +
-                "servoları home konutuna alıyoruz ki \n" +
-                "montaj sırasında yanlış bağladı ise\n" +
-                "hatamızı görelim. Tam servo home da \n" +
-                "gösterildiği gibi duruyorsa ottonuz \n" +
-                "dans etmeye hazır demektir.")
+        projeDetayTextList2.add("Otto programı indirdikten sonra libraries kısmını arduino’nun içindeki libraries kısmına kopyalıyoruz.\n" +
+                "Sonra servo home programını çalıştırıp servoları home konutuna alıyoruz ki montaj sırasında yanlış bağladı ise hatamızı görelim. Tam servo home da gösterildiği gibi duruyorsa ottonuz dans etmeye hazır demektir.")
 
-        projeDetayTextList2.add("RGB renk ayırma sensörünün kütüphanesine\n" +
-                "3 Boyutlı yazıcı dosyalarına ve \n" +
-                "proje kodlarına kodları indir butonuna \n" +
-                "basarak ulaşabilirsiniz.")
+        projeDetayTextList2.add("RGB renk ayırma sensörünün kütüphanesine 3 Boyutlı yazıcı dosyalarına ve proje kodlarına kodları indir butonuna basarak ulaşabilirsiniz.")
         projeDetayTextList2.add("Projenin kodları aşağıdadır;\n" +
                 "-------------------------------------\n" +
                 "#define OnSensor 3\n" +
@@ -976,23 +926,13 @@ class ProjeFragment : Fragment(),ProjeViewAdapter.Listener{
                 "  \n" +
                 "}\n" +
                 "-------------------------------------")
-        projeDetayTextList2.add("Projeye ait 3d yazıcı parçalarına\n" +
-                "kodları indir butonundan ulaşabilirsiniz.\n" +
+        projeDetayTextList2.add("Projeye ait 3d yazıcı parçalarına kodları indir butonundan ulaşabilirsiniz.\n" +
                 "\n" +
-                "Projede \n" +
-                "Adafruits SSD1306 ve Adafruits MLX90614\n" +
-                "isimli kütüphaneler kullanılmıştır.\n" +
-                "Kodları indir butonundan indirebilir \n" +
-                "ya da Araçlar> Kütüphaneleri Yönet\n" +
-                "sekmesine girince arama kısmına \n" +
-                "kütüphanelerin isimlerini yazarak \n" +
-                "indirebilirsiniz.\n" +
+                "Projede Adafruits SSD1306 ve Adafruits MLX90614 isimli kütüphaneler kullanılmıştır.\n" +
+                "Kodları indir butonundan indirebilir ya da Araçlar> Kütüphaneleri Yönet sekmesine girince arama kısmına  kütüphanelerin isimlerini yazarak indirebilirsiniz.\n" +
                 "\n" +
-                "Ayrıca projeye ait arduino kodlarına da\n" +
-                "kodları indir butonundan ulaşabilirsiniz.")
-        projeDetayTextList2.add("Projeye ait SPFD5408 isimli kütüphaneye\n" +
-                "ve arduino kodlarına kodları indir\n" +
-                "butonundan ulaşabilirsiniz.")
+                "Ayrıca projeye ait arduino kodlarına da kodları indir butonundan ulaşabilirsiniz.")
+        projeDetayTextList2.add("Projeye ait SPFD5408 isimli kütüphaneye ve arduino kodlarına kodları indir butonundan ulaşabilirsiniz.")
     }
 
 }
